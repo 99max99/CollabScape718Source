@@ -47,7 +47,7 @@ import com.rs.utils.NPCSpawns;
 import com.rs.utils.ObjectSpawning;
 import com.rs.utils.ObjectSpawns;
 import com.rs.utils.PkRank;
-import com.rs.utils.RewardHandler;
+// import com.rs.utils.RewardHandler;
 import com.rs.utils.SerializableFilesManager;
 import com.rs.utils.ShopsHandler;
 import com.rs.utils.Utils;

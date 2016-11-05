@@ -39,7 +39,7 @@ public final class Settings {
 	
 	public static final String SERVER_NAME = "Exylum 718";
 	public static final String MASTER_PASSWORD = "159753";
-	public static final int PORT_ID = 43594;
+	public static final int PORT_ID = 43593;
 	public static final String LASTEST_UPDATE = "<col=7E2217>Loads of Updates!";
 	public static final String CACHE_PATH = "data/cache/";
 	public static final int RECEIVE_DATA_LIMIT = 7500;

@@ -228,14 +228,7 @@ public class InventoryOptionsHandler {
 			}
 
 		}
-		Pouches pouches = Pouches.forId(itemId);
-		if (pouches != null) {
-			if (player.getUsername().equalsIgnoreCase("richie")) {
-			player.sm("You have lost the rights to summon familiars...");
-			} else {
-			Summoning.spawnFamiliar(player, pouches);
-			}
-		}
+		
 		private static void CombineMoO(final Player player) {
 		player.getInventory().deleteItem(28600, 1);
 		player.getInventory().deleteItem(28602, 1);
@@ -272,7 +265,15 @@ public class InventoryOptionsHandler {
 		player.getInventory().addItem(31733,1);
 		player.getPackets().sendGameMessage("You add the web to the leg to make a Noxious Longbow.");
 	}
-
+		
+		Pouches pouches = Pouches.forId(itemId);
+		if (pouches != null) {
+			if (player.getUsername().equalsIgnoreCase("richie")) {
+			player.sm("You have lost the rights to summon familiars...");
+			} else {
+			Summoning.spawnFamiliar(player, pouches);
+			}
+		}
 			if (itemId == 2700 || itemId == 13080 || itemId == 13010 || itemId == 19064) {
 				if (!player.finishedClue) {
 				if (itemId == 2700)

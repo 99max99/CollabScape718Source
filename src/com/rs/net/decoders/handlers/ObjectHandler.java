@@ -442,9 +442,9 @@ public final class ObjectHandler {
 		                    if (players == null)
 		                        continue;
 		                    if (player.isPker) {
-		                    	players.getPackets().sendGameMessage("<img=7><col=FF0000>All welcome "+ player.getDisplayName() +" to Noszscape, they are playing as a pker!</col></img>");
+		                    	players.getPackets().sendGameMessage("<img=7><col=FF0000>All welcome "+ player.getDisplayName() +" to CollabScape718, they are playing as a pker!</col></img>");
 		                    } else {
-		                    	players.getPackets().sendGameMessage("<img=7><col=FF0000>All welcome "+ player.getDisplayName() +" to Noszscape, they are using the game mode "+gameMode+"!</col></img>");	
+		                    	players.getPackets().sendGameMessage("<img=7><col=FF0000>All welcome "+ player.getDisplayName() +" to CollabScape718, they are using the game mode "+gameMode+"!</col></img>");	
 		                    }
 		               		 player.starter += 1;
 						}

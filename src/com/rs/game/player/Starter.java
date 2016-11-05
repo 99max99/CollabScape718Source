@@ -88,9 +88,9 @@ public class Starter {
 	    player.getInventory().addItem(562, 1000); // chaos rune
         player.starter = 3;
         player.starterstage = 3;
-        FriendChatsManager.joinChat("99max99", player);
+        FriendChatsManager.joinChat("Help", player);
 		FriendChatsManager.refreshChat(player);
-		player.getPackets().sendGameMessage("Welcome to Noszscape!");
+		player.getPackets().sendGameMessage("Welcome to CollabScape718!");
         player.getPackets().sendGameMessage("The world is huge and can be confusing!");
         player.getPackets().sendGameMessage("If you have any questions you can check out the forums for guides!");
         player.getPackets().sendGameMessage("...and if that doesn't answer your questions you can ask any staff online!");

@@ -42,7 +42,7 @@ public class Ham extends Dialogue {
 			break;
 		case 2:
 			stage = 3;
-			sendNPCDialogue(npcId, 9827, "We are here to rid the world of Noszscape from the monsters",
+			sendNPCDialogue(npcId, 9827, "We are here to rid the world of CollabScape from the monsters",
 					"that inhabit and spoil the society. We must get rid of all",
 					"monsters. Death to the monsters!");
 			break;

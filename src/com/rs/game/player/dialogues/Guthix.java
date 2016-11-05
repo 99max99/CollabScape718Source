@@ -49,7 +49,7 @@ public class Guthix extends Dialogue {
 			stage = -1;
 			sendEntityDialogue(SEND_1_TEXT_CHAT,
 					new String[] { NPCDefinitions.getNPCDefinitions(npcId).name,
-							"From here, you can see all of Noszscape. It is a beautiful sight, isn't it?" }, IS_NPC, npcId, 9827);
+							"From here, you can see all of CollabScape. It is a beautiful sight, isn't it?" }, IS_NPC, npcId, 9827);
 		}else if (stage == 5) {
 			sendEntityDialogue(SEND_1_TEXT_CHAT,
 					new String[] { NPCDefinitions.getNPCDefinitions(npcId).name,

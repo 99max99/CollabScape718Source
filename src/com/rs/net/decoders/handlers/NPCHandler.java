@@ -110,7 +110,7 @@ public class NPCHandler {
 			if (!player.withinDistance(npc, 2))
 				return;
 			npc.faceEntity(player);
-			player.getPackets().sendGameMessage("The circus is not at Noszscape currently, sorry!");
+			player.getPackets().sendGameMessage("The circus is not at CollabScape718 currently, sorry!");
 			return;
 		}
 		if (npc.getDefinitions().name.contains("Grim Reaper")

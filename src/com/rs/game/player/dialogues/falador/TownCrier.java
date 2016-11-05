@@ -50,7 +50,7 @@ public class TownCrier extends Dialogue {
 					SEND_1_TEXT_CHAT,
 					new String[] {
 							NPCDefinitions.getNPCDefinitions(npcId).name,
-							"We are in a game developed by Miles called Noszscape, atleast that's what the bartender told me." },
+							"We are in a game developed by Miles called CollabScape, atleast that's what the bartender told me." },
 					IS_NPC, npcId, 9827);
 			stage = 4;
 		} else if (stage == 4) {

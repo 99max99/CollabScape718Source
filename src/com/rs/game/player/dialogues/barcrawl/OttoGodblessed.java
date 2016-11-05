@@ -120,7 +120,7 @@ public class OttoGodblessed extends Dialogue {
 			sendNPCDialogue(
 					npcId,
 					9827,
-					"I need you to go around Noszscape and fill out this BarCrawl card for my brother over at the agility course. It shouldn't take too long.");
+					"I need you to go around CollabScape and fill out this BarCrawl card for my brother over at the agility course. It shouldn't take too long.");
 			stage = 4;
 		} else if (stage == 4) {
 			sendOptionsDialogue("Help out Otto?", "Yes",
@@ -139,7 +139,7 @@ public class OttoGodblessed extends Dialogue {
 				sendNPCDialogue(
 						npcId,
 						9827,
-						"Alright! I need you to go to various bars around Noszscape and drink their signature Ale. Then fill out the card. Once the card is filled out, come back to me and I will teach you some new skills!");
+						"Alright! I need you to go to various bars around CollabScape and drink their signature Ale. Then fill out the card. Once the card is filled out, come back to me and I will teach you some new skills!");
 				
 				player.barCrawl = 1;
 			stage = 8;
@@ -163,7 +163,7 @@ public class OttoGodblessed extends Dialogue {
 							sendNPCDialogue(
 									npcId,
 									9827,
-									"You have to go to Pubs around Noszscape and fill out the BarCrawl Card by drinking the beer that they give you. Once you have completed that, come back to me.");
+									"You have to go to Pubs around CollabScape and fill out the BarCrawl Card by drinking the beer that they give you. Once you have completed that, come back to me.");
 							stage = 8;
 						} else if (componentId == OPTION_2) {
 							sendPlayerDialogue(9827, "Erm..I have lost the card...");
@@ -174,7 +174,7 @@ public class OttoGodblessed extends Dialogue {
 							sendNPCDialogue(
 									npcId,
 									9827,
-									"The bars are located all around Noszscape! But if I told you the exact locations, it wouldn't be as fun!");
+									"The bars are located all around CollabScape! But if I told you the exact locations, it wouldn't be as fun!");
 							
 							stage = 8;
 						} else if (componentId == OPTION_4) {

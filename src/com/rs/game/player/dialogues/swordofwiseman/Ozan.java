@@ -54,16 +54,16 @@ public class Ozan extends Dialogue {
 		} else if (stage == 5) {
 			stage = 6;
 			sendPlayerDialogue(9845,
-					"So he can protect Noszscape from all the ",
+					"So he can protect CollabScape from all the ",
 					"nasty demons out there!");
 		} else if (stage == 6) {
 			stage = 7;
 			sendNPCDialogue(OZAN, 9845, "Fine, but you have a choice..",
-					"You can either take the sword and you can protect Noszscape...");
+					"You can either take the sword and you can protect CollabScape...");
 		} else if (stage == 7) {
 			stage = 8;
 			sendNPCDialogue(OZAN, 9845, "Or I will return it to the king for him to",
-					"protect Noszscape.");
+					"protect CollabScape.");
 		} else if (stage == 8) {
 			sendOptionsDialogue(SEND_DEFAULT_OPTIONS_TITLE,
 					"Take the sword",

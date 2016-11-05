@@ -31,7 +31,7 @@ public class Quests extends Dialogue {
 			} else {
 
 		stage = 1;
-		sendOptionsDialogue("Noszscape Quests", "Dwarf Cannon",
+		sendOptionsDialogue("CollabScape Quests", "Dwarf Cannon",
 				"Cooks Assistant", "Restless Ghost", "Smoking Kills",
 				"More...");
 			}
@@ -71,7 +71,7 @@ public class Quests extends Dialogue {
 				player.getControlerManager().forceStop();*/
 				player.getControlerManager().removeControlerWithoutCheck();
 			} else if (componentId == OPTION_5) {
-				sendOptionsDialogue("Noszscape Quests",
+				sendOptionsDialogue("CollabScape Quests",
 						"Lost City", "Vampyre Slayer", "Dragon Slayer", "Ernest the Chicken", "More");
 				stage = 2;
 			}
@@ -85,7 +85,7 @@ public class Quests extends Dialogue {
 				} else if (componentId == OPTION_4) { //Ernest the Chicken
 					player.getInterfaceManager().sendErnestChicken();
 				} else if (componentId == OPTION_5) {
-					sendOptionsDialogue("Noszscape Quests",
+					sendOptionsDialogue("CollabScape Quests",
 							"Imp Catcher",
 							"Rune Mysteries",
 							"Gertrude's Cat");
@@ -109,7 +109,7 @@ public class Quests extends Dialogue {
 			} else if (componentId == OPTION_4) { 
 				
 			} else if (componentId == OPTION_5) {
-				sendOptionsDialogue("Noszscape Quests",
+				sendOptionsDialogue("CollabScape Quests",
 						"No...");
 				stage = 2;
 			}

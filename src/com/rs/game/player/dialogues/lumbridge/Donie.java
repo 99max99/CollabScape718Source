@@ -30,7 +30,7 @@ public class Donie extends Dialogue {
 				stage = 14;
 				break;
 			} else if(componentId == OPTION_2) {
-				sendNPCDialogue(npcId, 9827, "Noszscape is striving to be unique, and they want to",
+				sendNPCDialogue(npcId, 9827, "CollabScape is striving to be unique, and they want to",
 						"make the entire world interactable. We are starting with the F2P region.",
 						"We are planning on adding every object, dialogue, absolutely everything",
 						"so that there is nothing that doesn't work.");

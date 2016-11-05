@@ -35,7 +35,7 @@ public class SowQuestStart extends Dialogue {
 					"Why should I help you find your stupid sword?");
 		} else if (stage == 0) {
 			stage = 1;
-			sendNPCDialogue(KING, 9765, "It's the sword that protects Noszscape",
+			sendNPCDialogue(KING, 9765, "It's the sword that protects CollabScape",
 					"and its land, if we don't find this sword we are all doomed!");
 		} else if (stage == 1) {
 			stage = 2;

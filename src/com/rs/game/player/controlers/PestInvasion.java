@@ -287,7 +287,7 @@ public class PestInvasion extends Controler {
 		player.getInventory().addItem(23351, 5);
 		}
 		if(getCurrentWave() == 48) {
-			player.getDialogueManager().startDialogue("SimpleNPCMessage", VOID_KNIGHT, "Watch out, this is the deadliest mage on Noszscape!");
+			player.getDialogueManager().startDialogue("SimpleNPCMessage", VOID_KNIGHT, "Watch out, this is the deadliest mage on CollabScape!");
 		player.getInventory().addItem(23351, 5);
 		}	
 		if(getCurrentWave() == 45) {

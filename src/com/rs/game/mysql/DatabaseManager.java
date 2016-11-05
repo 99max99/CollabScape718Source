@@ -31,10 +31,10 @@ public class DatabaseManager {
 		try {
 			connection = DriverManager.getConnection("jdbc:mysql://" + host + "/" + database + "?jdbcCompliantTruncation=false", username, password);
 			statement = connection.createStatement();
-			Logger.log("Noszscape", "Successfully connected with " + host + "/" + database);
+			Logger.log("CollabScape", "Successfully connected with " + host + "/" + database);
 			connected = true;
 		} catch (Exception e) {
-			Logger.log("Noszscape", "Unable to connect with " + host + "/" + database + ".");
+			Logger.log("CollabScape", "Unable to connect with " + host + "/" + database + ".");
 			connected = false;
 		}
 	}

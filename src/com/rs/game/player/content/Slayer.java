@@ -119,7 +119,7 @@ public class Slayer {
 	DUCK(1, new String[] {}),
 
 	// finished
-	BIRD(1, new String[] { "Birds are a type of species found throughout Noszscape in different forms.", "It's recomended that you bring range weapons to fight these monsters.", "Avansies are the strongest and most widely known type of bird.", "Chickens are great for a fast task." }, AVIANSIE, CHICKEN, CHOMPY_BIRD, DUCK),
+	BIRD(1, new String[] { "Birds are a type of species found throughout CollabScape in different forms.", "It's recomended that you bring range weapons to fight these monsters.", "Avansies are the strongest and most widely known type of bird.", "Chickens are great for a fast task." }, AVIANSIE, CHICKEN, CHOMPY_BIRD, DUCK),
 
 	// finished
 	BEAR(1, new String[] {}),

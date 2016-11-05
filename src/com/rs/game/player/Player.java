@@ -3192,7 +3192,7 @@ public class Player extends Entity {
 			sendMessage("<col=ffffff>Please be patient and wait a few minutes for everything to load before you play</col>");
 			sendMessage("<col=ffffff>To check your progress, simply press the '`/~' key on your keyboard and type 'displayfps'.</col>");
 			sendMessage("<col=ffffff>Some yellow text should show up on the screen, and when the Cache reaches 100%, reload your client.</col>");
-			sendMessage("<col=ffffff>Your screen should no longer be black after the restart and you can now enjoy Noszscape!</col>");
+			sendMessage("<col=ffffff>Your screen should no longer be black after the restart and you can now enjoy CollabScape718!</col>");
 		PlayerLook.openCharacterCustomizing(this);
 		Starter.appendStarter(this);
 		appendStarter2();
@@ -6266,7 +6266,7 @@ public int welcomemessage = 0;
 		case 14632:
 			setNextAnimation(new Animation(1168));
 			setNextGraphics(new Graphics(247));
-			setNextForceTalk(new ForceTalk("For NoszScape!"));
+			setNextForceTalk(new ForceTalk("For CollabScape718!"));
 			final boolean enhanced = weaponId == 14632;
 			skills.set(
 					Skills.DEFENCE,

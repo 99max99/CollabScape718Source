@@ -60,7 +60,7 @@ public class Santa1 extends Dialogue {
 			break;
 		case 4:
 			stage = 5;
-			sendNPCDialogue(npcId, 9827, "I must find my Snow Imps, they are all scatered all over Noszscape,",
+			sendNPCDialogue(npcId, 9827, "I must find my Snow Imps, they are all scatered all over CollabScape,",
 					"and with out them the Christmas feast and Christmas is ruined! ");
 			break;
 		case 5:

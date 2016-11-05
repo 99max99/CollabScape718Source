@@ -24,7 +24,7 @@ public class NewPlayerTutorial extends Dialogue {
 		player.getInterfaceManager().closeSettings(); //Disables Settings Tab
 		player.getHintIconsManager().removeUnsavedHintIcon();
 		sendDialogue("Guthix Priest",
-						"Welcome to Noszscape, " + player.getUsername() + ".",
+						"Welcome to CollabScape, " + player.getUsername() + ".",
 						"Please click the flashing tab, then click continue.");
 		stage = 2;
 	}
@@ -40,7 +40,7 @@ public class NewPlayerTutorial extends Dialogue {
 			player.getPackets().sendConfig(1021, 0);
 			sendDialogue("This is the Player Support Tab.",
 						 "Here, you can sumbit help tickets and report bugs",
-						 "to help improve your game experience and Noszscape.");
+						 "to help improve your game experience and CollabScape.");
 			stage = 3;
 		break;
 		
@@ -120,7 +120,7 @@ public class NewPlayerTutorial extends Dialogue {
 		 */
 		
 		case 9:
-			sendDialogue("Noszscape wishes the best of luck on your adventure",
+			sendDialogue("CollabScape wishes the best of luck on your adventure",
 						 "and hope you are prepared for the world that you have yet",
 						 "to discover. Updates are added every single day!");
 			stage = 10;
@@ -173,7 +173,7 @@ public class NewPlayerTutorial extends Dialogue {
 		
 		case 15:
 			sendDialogue("To begin training, it is suggested to go",
-						 "to the Rock Crabs. To get around Noszscape",
+						 "to the Rock Crabs. To get around CollabScape",
 						 "simply use your Crystal Teleport.");
 			stage = 9;
 		break;

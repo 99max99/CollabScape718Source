@@ -117,8 +117,8 @@ public class QuizMaster extends Dialogue {
 						"3 Wrong You have Lost!" }, IS_NPC, npcId, 9827);
 				stage = 13;
 		} else {
-			sendPlayerDialogue(SEND_2_OPTIONS, "Who is the creator of Noszscape", "Nosz!",
-					"Jason!");
+			sendPlayerDialogue(SEND_2_OPTIONS, "Who is the creator of CollabScape718", "99max99!",
+					"reddragon!", "Pked_divine!");
 		stage = 10;
 			}
 		} else if (stage == 10) {

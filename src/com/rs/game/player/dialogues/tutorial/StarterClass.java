@@ -27,7 +27,7 @@ public class StarterClass extends Dialogue {
 				player.getInterfaceManager().sendInterfaces();
 				player.closeInterfaces();
 				player.unlock();
-				player.getPackets().sendGameMessage("You may now enter the realm of Noszscape through this portal");
+				player.getPackets().sendGameMessage("You may now enter the realm of CollabScape through this portal");
 				player.getHintIconsManager().addHintIcon(1348, 5199, 0, 100, 0, 0,
 						-1, false);
                  player.getInventory().addItem(11814, 1);//Bronze Armour Set
@@ -49,7 +49,7 @@ public class StarterClass extends Dialogue {
 				player.getInterfaceManager().sendInterfaces();
 				player.closeInterfaces();
 				player.unlock();
-				player.getPackets().sendGameMessage("You may now enter the realm of Noszscape through this portal");
+				player.getPackets().sendGameMessage("You may now enter the realm of CollabScape through this portal");
 				player.getHintIconsManager().addHintIcon(1348, 5199, 0, 100, 0, 0,
 						-1, false);
 				player.getInventory().addItem(11864, 1);//Green Dhide Set
@@ -74,7 +74,7 @@ public class StarterClass extends Dialogue {
 				player.getInterfaceManager().sendInterfaces();
 				player.closeInterfaces();
 				player.unlock();
-				player.getPackets().sendGameMessage("You may now enter the realm of Noszscape through this portal");
+				player.getPackets().sendGameMessage("You may now enter the realm of CollabScape through this portal");
 				player.getHintIconsManager().addHintIcon(1348, 5199, 0, 100, 0, 0,
 						-1, false);
                 player.getInventory().addItem(11902, 1);//Enchanted Set
@@ -104,7 +104,7 @@ public class StarterClass extends Dialogue {
 				player.getInterfaceManager().sendInterfaces();
 				player.closeInterfaces();
 				player.unlock();
-				player.getPackets().sendGameMessage("You may now enter the realm of Noszscape through this portal");
+				player.getPackets().sendGameMessage("You may now enter the realm of CollabScape through this portal");
 				player.getHintIconsManager().addHintIcon(1348, 5199, 0, 100, 0, 0,
 						-1, false);
                 player.getInventory().addItem(1949, 1);//Chef's Hat
@@ -138,7 +138,7 @@ public class StarterClass extends Dialogue {
 			player.getInterfaceManager().sendInterfaces();
 			player.closeInterfaces();
 			player.unlock();
-			player.getPackets().sendGameMessage("You may now enter the realm of Noszscape through this portal");
+			player.getPackets().sendGameMessage("You may now enter the realm of CollabScape through this portal");
 			player.getHintIconsManager().addHintIcon(1348, 5199, 0, 100, 0, 0,
 					-1, false);
 			break;

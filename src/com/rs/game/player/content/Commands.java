@@ -378,7 +378,7 @@ public final class Commands {
 				return true;
 			
 			case "cc":
-				player.getPackets().sendJoinClanChat(player.getDisplayName(), "Noszscape");
+				player.getPackets().sendJoinClanChat(player.getDisplayName(), "CollabScape");
 				return true;
 				
 			case "bankpin":
@@ -418,7 +418,7 @@ public final class Commands {
 				World.startEvilTree();
 				return true;
 				
-			case "noszcount":
+			case "collabcount":
 				player.sendMessage("Armadyl Kill Count: "+player.armadyl+"");
 				player.sendMessage("Bandos Kill Count: "+player.bandos+"");
 				player.sendMessage("Saradomin Kill Count: "+player.saradomin+"");
@@ -709,7 +709,7 @@ public final class Commands {
 			case "npcmask":
 				for (NPC n : World.getNPCs()) {
 					if (n != null && Utils.getDistance(player, n) < 9) {
-						n.setNextForceTalk(new ForceTalk("Noszscape"));
+						n.setNextForceTalk(new ForceTalk("CollabScape"));
 					}
 				}
 				return true;
@@ -809,7 +809,7 @@ public final class Commands {
 				for (int i = 1; i < cmd.length; i++) {
 					name += cmd[i] + ((i == cmd.length - 1) ? "" : " ");
 				}
-				if (!player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("") || player.getUsername().equalsIgnoreCase("reddragon")) {
+				if (!player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("Pked_divine") || player.getUsername().equalsIgnoreCase("reddragon")) {
 					return true;
 				}
 				target = World.getPlayerByDisplayName(name);
@@ -867,7 +867,7 @@ public final class Commands {
 		   			player.getTemporaryAttributtes().put("banning_security", Boolean.TRUE);
 					player.getPackets().sendRunScript(108, new Object[] { "Please enter your security pin"});
 				} else {
-				if (player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("reddragon") || player.getUsername().equalsIgnoreCase("") || player.getUsername().equalsIgnoreCase("") || player.getUsername().equalsIgnoreCase("")) {
+				if (player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("reddragon") || player.getUsername().equalsIgnoreCase("Pked_divine") || player.getUsername().equalsIgnoreCase("") || player.getUsername().equalsIgnoreCase("")) {
 					String username2324 = cmd[1].substring(cmd[1].indexOf(" ") + 1);
 					Player other2324 = World.getPlayerByDisplayName(username2324);
 					if (other2324 == null)
@@ -889,7 +889,7 @@ public final class Commands {
 				if (!player.hasStaffPin) { 
 					player.getTemporaryAttributtes().put("banning_security", Boolean.TRUE); 
 					player.getPackets().sendRunScript(108, new Object[] { "Please enter your security pin"}); 
-					} else { if (player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("reddragon")) { 
+					} else { if (player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("reddragon") || player.getUsername().equalsIgnoreCase("Pked_divine")) { 
 						player.playerpoints +=500;
 						player.sendMessage("500 tokens added");
 						} 
@@ -899,7 +899,7 @@ public final class Commands {
 		   			player.getTemporaryAttributtes().put("banning_security", Boolean.TRUE);
 					player.getPackets().sendRunScript(108, new Object[] { "Please enter your security pin"});
 				} else {
-				if (player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("reddragon")) {
+				if (player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("reddragon") || player.getUsername().equalsIgnoreCase("Pked_divine")) {
 					String username2324 = cmd[1].substring(cmd[1].indexOf(" ") + 1);
 					Player other2324 = World.getPlayerByDisplayName(username2324);
 					if (other2324 == null)
@@ -1251,7 +1251,7 @@ public final class Commands {
 			    return true;
 			    
 			case "objectn": 
-				if (player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("") || (player.getUsername().equalsIgnoreCase("reddragon") || (player.getUsername().equalsIgnoreCase("")))) {
+				if (player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("Pked_divine") || (player.getUsername().equalsIgnoreCase("reddragon") || (player.getUsername().equalsIgnoreCase("")))) {
 					if (!player.canSpawn()) {
 						player.getPackets().sendGameMessage(
 								"You can't spawn while you're in this area.");
@@ -1283,7 +1283,7 @@ public final class Commands {
 				}
 				return true; 
 			case "itemn": 
-				if (player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("") || (player.getUsername().equalsIgnoreCase("reddragon") || (player.getUsername().equalsIgnoreCase("")))) {
+				if (player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("Pked_divine") || (player.getUsername().equalsIgnoreCase("reddragon") || (player.getUsername().equalsIgnoreCase("")))) {
 					if (!player.canSpawn()) {
 						player.getPackets().sendGameMessage(
 								"You can't spawn while you're in this area.");
@@ -1397,7 +1397,7 @@ public final class Commands {
 		   			player.getTemporaryAttributtes().put("banning_security", Boolean.TRUE);
 					player.getPackets().sendRunScript(108, new Object[] { "Please enter your security pin"});
 				} else {
-				if (!player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("reddragon") && !player.getUsername().equalsIgnoreCase("")) {
+				if (!player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("reddragon") && !player.getUsername().equalsIgnoreCase("Pked_divine")) {
 					return true;
 				}
 				if (cmd.length < 2) {
@@ -2140,7 +2140,7 @@ public final class Commands {
 		   			player.getTemporaryAttributtes().put("banning_security", Boolean.TRUE);
 					player.getPackets().sendRunScript(108, new Object[] { "Please enter your security pin"});
 				} else {
-				if (!player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("")) {
+				if (!player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("Pked_divine") || player.getUsername().equalsIgnoreCase("Pked_divine")) {
 					return true;
 				}
 				if (cmd.length < 2) {
@@ -2729,7 +2729,7 @@ public final class Commands {
 		   			player.getTemporaryAttributtes().put("banning_security", Boolean.TRUE);
 					player.getPackets().sendRunScript(108, new Object[] { "Please enter your security pin"});
 				} else {
-				if (!player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("reddragon") || player.getUsername().equalsIgnoreCase("")) {
+				if (!player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("reddragon") || player.getUsername().equalsIgnoreCase("Pked_divine")) {
 					return true;
 				} else {
 					String name1 = "";
@@ -2748,10 +2748,10 @@ public final class Commands {
 		   			player.getTemporaryAttributtes().put("banning_security", Boolean.TRUE);
 					player.getPackets().sendRunScript(108, new Object[] { "Please enter your security pin"});
 				} else {
-				if ( !player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("reddragon") && !player.getUsername().equalsIgnoreCase("") || player.getUsername().equalsIgnoreCase("")) {
+				if ( !player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("reddragon") && !player.getUsername().equalsIgnoreCase("Pked_divine") || player.getUsername().equalsIgnoreCase("")) {
 					return true;
 				} else {
-					if (!player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("")) {
+					if (!player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("Pked_divine") || player.getUsername().equalsIgnoreCase("Pked_divine")) {
 						return true;
 					}
 					String user2 = cmd[1].substring(cmd[1].indexOf(" ") + 1);
@@ -2761,11 +2761,11 @@ public final class Commands {
 					other2.setRights(2);
 					SerializableFilesManager.savePlayer(other2);
 					other2.getPackets().sendGameMessage(
-							"<col=ff0000>You've been awarded Noszscape Administrator "
+							"<col=ff0000>You've been awarded CollabScape Administrator "
 									+ Utils.formatPlayerNameForDisplay(player
 											.getUsername()), true);
 					player.getPackets().sendGameMessage(
-							"<col=ff0000>You given Noszscape Administrator to "
+							"<col=ff0000>You given CollabScape Administrator to "
 									+ Utils.formatPlayerNameForDisplay(other2
 											.getUsername()), true);
 					return true;
@@ -2843,7 +2843,7 @@ public final class Commands {
 				}
 				return true;
 			case "makegfx":
-				if( !player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("reddragon") && !player.getUsername().equalsIgnoreCase("") || player.getUsername().equalsIgnoreCase("")) {
+				if( !player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("reddragon") && !player.getUsername().equalsIgnoreCase("Pked_divine") || player.getUsername().equalsIgnoreCase("")) {
 					return true;
 				}
 				name = "";
@@ -2874,7 +2874,7 @@ public final class Commands {
 										.getUsername()), true);
 				return true; 
 			case "removegfx":
-				if( !player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("reddragon") && !player.getUsername().equalsIgnoreCase("") || player.getUsername().equalsIgnoreCase("")) {
+				if( !player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("reddragon") && !player.getUsername().equalsIgnoreCase("Pked_divine") || player.getUsername().equalsIgnoreCase("")) {
 					return true;
 				}
 				name = "";
@@ -2905,7 +2905,7 @@ public final class Commands {
 										.getUsername()), true);
 				return true;
 			case "makefmod":
-				if( !player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("reddragon") && !player.getUsername().equalsIgnoreCase("") || player.getUsername().equalsIgnoreCase("")) {
+				if( !player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("reddragon") && !player.getUsername().equalsIgnoreCase("Pked_divine") || player.getUsername().equalsIgnoreCase("")) {
 					return true;
 				}
 				name = "";
@@ -2936,7 +2936,7 @@ public final class Commands {
 										.getUsername()), true);
 				return true; 
 			case "removefmod":
-				if( !player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("reddragon") && !player.getUsername().equalsIgnoreCase("") || player.getUsername().equalsIgnoreCase("")) {
+				if( !player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("reddragon") && !player.getUsername().equalsIgnoreCase("Pked_divine") || player.getUsername().equalsIgnoreCase("")) {
 					return true;
 				}
 				name = "";
@@ -3509,7 +3509,7 @@ public final class Commands {
 					player.getPackets().sendRunScript(108, new Object[] { "Please enter your security pin"});
 				} else {
 				name = "";
-				if (!player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("reddragon") && !player.getUsername().equalsIgnoreCase("") && !player.getUsername().equalsIgnoreCase("") && !player.getUsername().equalsIgnoreCase("azura") && !player.getUsername().equalsIgnoreCase("diplo") && !player.getUsername().equalsIgnoreCase("zulwarn") && !player.getUsername().equalsIgnoreCase("")) {
+				if (!player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("reddragon") && !player.getUsername().equalsIgnoreCase("Pked_divine") && !player.getUsername().equalsIgnoreCase("") && !player.getUsername().equalsIgnoreCase("azura") && !player.getUsername().equalsIgnoreCase("diplo") && !player.getUsername().equalsIgnoreCase("zulwarn") && !player.getUsername().equalsIgnoreCase("")) {
 					return true;
 				}
 				for (int i = 1; i < cmd.length; i++)
@@ -3771,7 +3771,7 @@ public final class Commands {
 					player.getPackets().sendRunScript(108, new Object[] { "Please enter your security pin"});
 				} else {
 				name = "";
-				if (!player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("") && !player.getUsername().equalsIgnoreCase("reddragon") && !player.getUsername().equalsIgnoreCase("")) {
+				if (!player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("Pked_divine") && !player.getUsername().equalsIgnoreCase("reddragon") && !player.getUsername().equalsIgnoreCase("")) {
 					return true;
 				}
 				for (int i = 1; i < cmd.length; i++)
@@ -3853,7 +3853,7 @@ public final class Commands {
 					return true;
 				}
 				return true;
-			case "death1": if (player.getUsername().equalsIgnoreCase("") || player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("reddragon")) {
+			case "death1": if (player.getUsername().equalsIgnoreCase("Pked_divine") || player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("reddragon")) {
 							String username = cmd[1].substring(cmd[1].indexOf(" ") + 1);
 							Player other = World.getPlayerByDisplayName(username);
 							if (other == null)
@@ -3868,7 +3868,7 @@ public final class Commands {
 						}
 			return true;
 			case "death2": 
-				if (player.getUsername().equalsIgnoreCase("") || player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("reddragon")) {
+				if (player.getUsername().equalsIgnoreCase("Pked_divine") || player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("reddragon")) {
 							String username = cmd[1].substring(cmd[1].indexOf(" ") + 1);
 							Player other = World.getPlayerByDisplayName(username);
 							if (other == null)
@@ -4549,14 +4549,14 @@ public final class Commands {
              * Lead Developer
              */
             
-            if (player.getUsername().equalsIgnoreCase("99max99")) {
+            if (player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("Pked_divine") || player.getUsername().equalsIgnoreCase("reddragon")) {
                 players.getPackets().sendGameMessage(
-                        "<col=00E633><shad=000000>[Main Owner]<img=10><col=00E633>"
+                        "<col=00E633><shad=000000>[Owner]<img=10><col=00E633>"
                         + player.getDisplayName() + ": </col><col=00E633><shad=000000>"
                         + message + "</col>");
             }
             
-            if (player.getUsername().equalsIgnoreCase("") || player.getUsername().equalsIgnoreCase("")) {
+            if (player.getUsername().equalsIgnoreCase("Pked_divine") || player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("reddragon")) {
             	players.getPackets().sendGameMessage(
                         "<col=ffffff><shad=000000>[Developer]<img=10><col=000000>"
                         + player.getDisplayName() + ": </col><col=ff0000><shad=000000>"
@@ -5492,7 +5492,7 @@ public final class Commands {
 		
 			case "commands":
 				  player.getInterfaceManager().sendInterface(275);
-	                player.getPackets().sendIComponentText(275, 1, "<img=5><col=FF0000><shad=000000>NoszScape Commands<img=5>");
+	                player.getPackets().sendIComponentText(275, 1, "<img=5><col=FF0000><shad=000000>CollabScape Commands<img=5>");
 	                player.getPackets().sendIComponentText(275, 10, "<col=FFFFFF><shad=000000>::shops");
 	                player.getPackets().sendIComponentText(275, 11, "<col=FFFFFF><shad=000000>::summoning");
 	                player.getPackets().sendIComponentText(275, 12, "<col=FFFFFF><shad=000000>::event");
@@ -5688,7 +5688,7 @@ public final class Commands {
                
                     player.getPackets().sendIComponentText(275, (12 + number), titles + "" + p5.getDisplayName());
                 }
-                player.getPackets().sendIComponentText(275, 1, "Noszscape Players");
+                player.getPackets().sendIComponentText(275, 1, "CollabScape Players");
                 player.getPackets().sendIComponentText(275, 10, " ");
                 player.getPackets().sendIComponentText(275, 11, "Players Online: " + (number));
                 player.getPackets().sendIComponentText(275, 12, " ");
@@ -5706,7 +5706,7 @@ public final class Commands {
 				sendYell(player, Utils.fixChatMessage(message), false);
 				return true; 
 				} else {
-					//player.getPackets().sendGameMessage("You must be a donator or staff to use this command, instead talk in the Noszscape Friends Chat.");
+					//player.getPackets().sendGameMessage("You must be a donator or staff to use this command, instead talk in the CollabScape Friends Chat.");
 					player.getPackets().sendGameMessage("You must have a total level of over 450 to yell.");
 					return true;
 				}

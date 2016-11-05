@@ -1154,8 +1154,8 @@ public class InterfaceManager {
 	
 	public void sendFullScreenInterfaces() {
 		player.getPackets().sendWindowsPane(746, 0);
-		player.getPackets().sendIComponentText(746, 17, "Owner: Nosz");
-		player.getPackets().sendIComponentText(746, 183, "Co-Owner: Jason");
+		//player.getPackets().sendIComponentText(746, 17, "Owner: 99max99");
+		//player.getPackets().sendIComponentText(746, 183, "Owner: reddragon");
 		sendTab(21, 752);
 		sendTab(22, 751);
 		sendTab(15, 745);

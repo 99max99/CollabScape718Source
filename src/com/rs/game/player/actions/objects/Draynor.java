@@ -83,7 +83,7 @@ public class Draynor {
 	}
 	public static void Pottery(Player player,
 			final WorldObject object) {
-		player.getPackets().sendGameMessage("Pottery is not available on Noszscape yet...");
+		player.getPackets().sendGameMessage("Pottery is not available on CollabScape yet...");
 	}
 	public static void Skulls(Player player,
 			final WorldObject object) {

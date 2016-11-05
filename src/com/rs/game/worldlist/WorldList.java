@@ -8,7 +8,7 @@ public class WorldList {
 
 	//String activity, String ip, int countryId, String countryName, boolean members
 	public static void init() {
-		WORLDS.put(1, new WorldEntry("Main Server", "127.0.0.1", 1, "Noszscape Official World", true));
+		WORLDS.put(1, new WorldEntry("Main Server", "localhost", 1, "CollabScape Official World", true)); //IPHERE
 	}
 
 	public static WorldEntry getWorld(int worldId) {

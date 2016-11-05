@@ -13,7 +13,7 @@ public class WouldYou extends Dialogue {
 	@Override
 	public void start() {
 		stage = 1;
-		sendOptionsDialogue("Would you like to go to Noszscape?", "Yes Please", "No Thanks");
+		sendOptionsDialogue("Would you like to go to CollabScape?", "Yes Please", "No Thanks");
 	}
 
 
@@ -23,7 +23,7 @@ public class WouldYou extends Dialogue {
 		case 1:
 			if (componentId == OPTION_1) {
 				Magic.sendNormalTeleportSpell(player, 0, 0, new WorldTile(2852, 2960, 0));
-				player.sm("<col=FF0000>Welcome to the Noszscape!");
+				player.sm("<col=FF0000>Welcome to the CollabScape!");
 				player.getInterfaceManager().closeChatBoxInterface();
 			} else if(componentId == OPTION_2) {
 				player.getInterfaceManager().closeChatBoxInterface();

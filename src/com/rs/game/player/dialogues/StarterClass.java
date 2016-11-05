@@ -40,7 +40,7 @@ public class StarterClass extends Dialogue {
 						player.getInterfaceManager().sendInterfaces();
 						player.closeInterfaces();
 						player.unlock();
-						player.getPackets().sendGameMessage("You may now enter the realm of Noszscape through this portal");
+						player.getPackets().sendGameMessage("You may now enter the realm of CollabScape through this portal");
 						player.getHintIconsManager().addHintIcon(1348, 5199, 0, 100, 0, 0, -1, false);
 					}
 			    }
@@ -243,7 +243,7 @@ public class StarterClass extends Dialogue {
 			player.getInterfaceManager().sendInterfaces();
 			player.closeInterfaces();
 			player.unlock();
-			player.getPackets().sendGameMessage("You may now enter the realm of Noszscape through this portal");
+			player.getPackets().sendGameMessage("You may now enter the realm of CollabScape through this portal");
 			player.getHintIconsManager().addHintIcon(1348, 5199, 0, 100, 0, 0, -1, false);
 		} else if (stage == 1) {
 			if (componentId == OPTION_1) {
@@ -265,7 +265,7 @@ public class StarterClass extends Dialogue {
 					player.getInterfaceManager().sendInterfaces();
 					player.closeInterfaces();
 					player.unlock();
-					player.getPackets().sendGameMessage("You may now enter the realm of Noszscape through this portal");
+					player.getPackets().sendGameMessage("You may now enter the realm of CollabScape through this portal");
 					player.getHintIconsManager().addHintIcon(1348, 5199, 0, 100, 0, 0, -1, false);
                  //Crystal
                  player.starterstage = 3;
@@ -290,7 +290,7 @@ public class StarterClass extends Dialogue {
 				player.getInterfaceManager().sendInterfaces();
 				player.closeInterfaces();
 				player.unlock();
-				player.getPackets().sendGameMessage("You may now enter the realm of Noszscape through this portal");
+				player.getPackets().sendGameMessage("You may now enter the realm of CollabScape through this portal");
 				player.getHintIconsManager().addHintIcon(1348, 5199, 0, 100, 0, 0, -1, false);
                 //Crystal
                 player.starterstage = 3;
@@ -318,7 +318,7 @@ public class StarterClass extends Dialogue {
 				player.getInterfaceManager().sendInterfaces();
 				player.closeInterfaces();
 				player.unlock();
-				player.getPackets().sendGameMessage("You may now enter the realm of Noszscape through this portal");
+				player.getPackets().sendGameMessage("You may now enter the realm of CollabScape through this portal");
 				player.getHintIconsManager().addHintIcon(1348, 5199, 0, 100, 0, 0, -1, false);
                 //Crystal
                 player.starterstage = 3;
@@ -347,7 +347,7 @@ public class StarterClass extends Dialogue {
 				player.getInterfaceManager().sendInterfaces();
 				player.closeInterfaces();
 				player.unlock();
-				player.getPackets().sendGameMessage("You may now enter the realm of Noszscape through this portal");
+				player.getPackets().sendGameMessage("You may now enter the realm of CollabScape through this portal");
 				player.getHintIconsManager().addHintIcon(1348, 5199, 0, 100, 0, 0, -1, false);
                 //Crystal
                 player.starterstage = 3;
@@ -359,7 +359,7 @@ public class StarterClass extends Dialogue {
 				player.getInterfaceManager().sendInterfaces();
 				player.closeInterfaces();
 				player.unlock();
-				player.getPackets().sendGameMessage("You may now enter the realm of Noszscape through this portal");
+				player.getPackets().sendGameMessage("You may now enter the realm of CollabScape through this portal");
 				player.getHintIconsManager().addHintIcon(1348, 5199, 0, 100, 0, 0,
 						-1, false);
 			}
@@ -369,7 +369,7 @@ public class StarterClass extends Dialogue {
 			player.getInterfaceManager().sendInterfaces();
 			player.closeInterfaces();
 			player.unlock();
-			player.getPackets().sendGameMessage("You may now enter the realm of Noszscape through this portal");
+			player.getPackets().sendGameMessage("You may now enter the realm of CollabScape through this portal");
 			player.getHintIconsManager().addHintIcon(1348, 5199, 0, 100, 0, 0,
 					-1, false);
 	}       else if (stage == 3) {
@@ -382,7 +382,7 @@ public class StarterClass extends Dialogue {
 		player.getInterfaceManager().sendInterfaces();
 		player.closeInterfaces();
 		player.unlock();
-		player.getPackets().sendGameMessage("You may now enter the realm of Noszscape through this portal");
+		player.getPackets().sendGameMessage("You may now enter the realm of CollabScape through this portal");
 		player.getHintIconsManager().addHintIcon(1348, 5199, 0, 100, 0, 0,
 				-1, false);
 		}

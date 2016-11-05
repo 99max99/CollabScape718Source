@@ -19,7 +19,7 @@ public class Musicians extends Dialogue {
 		npcId = (Integer) parameters[0];
 		sendNPCDialogue(npcId, 9827, "Hello, "+ player.getDisplayName() +"!",
 				"Would you like to hear some of the finest music",
-				"that is being played around the lands of Noszscape?");
+				"that is being played around the lands of CollabScape?");
 	}
 	@Override
 	public void run(int interfaceId, int componentId) {

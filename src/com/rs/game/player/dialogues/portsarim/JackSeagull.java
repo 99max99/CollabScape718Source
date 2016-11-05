@@ -22,7 +22,7 @@ public class JackSeagull extends Dialogue {
 		case 0:
 			stage = -2;
 			sendNPCDialogue(npcId, 9827, "This is the *hic* Pirate Bar. Only adventurers who have *hic* ",
-					"braved the seas of Noszscape",
+					"braved the seas of CollabScape",
 					"may dine here! *hic*" );
 		break;
 		default:

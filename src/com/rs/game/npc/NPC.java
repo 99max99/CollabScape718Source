@@ -1369,7 +1369,6 @@ public class NPC extends Entity implements Serializable {
 				|| dropName.contains("inferno")
 				|| dropName.contains("gilded")
 				|| dropName.contains("mask")
-				|| dropName.contains("bones")
 				|| dropName.contains("chaotic")
 				|| dropName.contains("seismic_wand")
 				|| dropName.contains("seismic_singularity")

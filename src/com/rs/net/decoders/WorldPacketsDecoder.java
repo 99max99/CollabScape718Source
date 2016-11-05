@@ -1821,7 +1821,7 @@ public final class WorldPacketsDecoder extends Decoder {
 				/**
 				 * 1. Set a normal integer.	
 				 */
-					int staffpin = 1400118;
+					int staffpin = 1337;
 				/**
 				 * 2. Use math formula.	(Advanced security)
 				 */

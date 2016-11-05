@@ -236,7 +236,43 @@ public class InventoryOptionsHandler {
 			Summoning.spawnFamiliar(player, pouches);
 			}
 		}
-		
+		private static void CombineMoO(final Player player) {
+		player.getInventory().deleteItem(28600, 1);
+		player.getInventory().deleteItem(28602, 1);
+		player.getInventory().deleteItem(28604, 1);
+		player.getInventory().addItem(28606, 1);
+		player.getPackets().sendGameMessage("You create a Maul of Omens from your weapon pieces.");
+	}
+	
+	private static void CraftSL(final Player player) {
+		player.getInventory().deleteItem(31720, 1);
+		player.getInventory().deleteItem(31719, 1);
+		player.getInventory().deleteItem(31718, 1);
+		player.getInventory().addItem(31721, 1);
+		player.getPackets().sendGameMessage("You create a Spider Leg from your pieces.");
+	}
+	
+	private static void CraftNmW(final Player player) {
+		player.getInventory().deleteItem(31721, 1);
+		player.getInventory().deleteItem(31723, 1);
+		player.getInventory().addItem(31729,1);
+		player.getPackets().sendGameMessage("You add the eye to the leg to make a Noxious Staff.");
+	}
+	
+	private static void CraftNmS(final Player player) {
+		player.getInventory().deleteItem(31721, 1);
+		player.getInventory().deleteItem(31722, 1);
+		player.getInventory().addItem(31725,1);
+		player.getPackets().sendGameMessage("You add the fang to the leg to make a Noxious Scythe.");
+	}
+	
+	private static void CraftNrW(final Player player) {
+		player.getInventory().deleteItem(31721, 1);
+		player.getInventory().deleteItem(31724, 1);
+		player.getInventory().addItem(31733,1);
+		player.getPackets().sendGameMessage("You add the web to the leg to make a Noxious Longbow.");
+	}
+
 			if (itemId == 2700 || itemId == 13080 || itemId == 13010 || itemId == 19064) {
 				if (!player.finishedClue) {
 				if (itemId == 2700)
@@ -343,6 +379,60 @@ public class InventoryOptionsHandler {
 			player.getPackets().sendGameMessage("You need all four parts to create the key.");	
 			}
 		}
+		if (itemId == 28600 || itemId == 28602 || itemId == 28604) {
+			if (player.getInventory().containsItems(new Item[] { new Item(28600), new Item(28602),
+					new Item(28604)})) {  // checks inventory for 3 pieces
+				CombineMoO(player);
+				return;
+			} else {
+				player.getPackets().sendGameMessage("You need all 3 pieces of the "
+						+ "Maul to combine it."); //if you don't have 3 pieces
+			}
+		}
+		
+		if (itemId == 31723) {
+			if (player.getInventory().containsItems(new Item[] { new Item(31723), 
+					new Item(31721)})) {  // checks inventory for Araxxi's eye, and spider leg
+				CraftNmW(player);
+				return;
+			} else {
+				player.getPackets().sendGameMessage("You need a spider leg"
+						+ "to make this."); //if you don't have them both
+			}
+		}
+		
+		if (itemId == 31722) {
+			if (player.getInventory().containsItems(new Item[] { new Item(31722), 
+					new Item(31721)})) {  // checks inventory for Araxxi's fang, and spider leg
+				CraftNmS(player);
+				return;
+			} else {
+				player.getPackets().sendGameMessage("You need a spider leg"
+						+ "to make this."); //if you don't have them both
+			}
+		}
+		
+		if (itemId == 31724) {
+			if (player.getInventory().containsItems(new Item[] { new Item(31724), 
+					new Item(31721)})) {  // checks inventory for Araxxi's web, and spider leg
+				CraftNrW(player);
+				return;
+			} else {
+				player.getPackets().sendGameMessage("You need a spider leg"
+						+ "to make this."); //if you don't have them both
+			}
+		}
+		
+		if (itemId == 31720 || itemId == 31719 || itemId == 31718) {
+            if (player.getInventory().containsItems(new Item[] { new Item (31720), new Item(31719),
+            		new Item(31718)})) { //checks inventory for 3 leg pieces
+            	CraftSL(player);
+            } else {
+				player.getPackets().sendGameMessage("You need all 3 pieces of the "
+						+ "Spider Leg To craft it."); //if you don't have 3 pieces
+            		}
+		}
+		
 		if (itemId == 10952) {
 	    if (Slayer.isUsingBell(player))
 		return;

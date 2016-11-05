@@ -1,0 +1,10 @@
+|| player.getX() == 2608 && player.getY() == 3093
+|| player.getX() == 2725 && player.getY() == 3491
+|| player.getX() == 2985 && player.getY() == 3292
+|| player.getX() == 2328 && player.getY() == 3644
+|| player.getX() == 2933 && player.getY() == 3448
+|| player.getX() == 2995 && player.getY() == 3293
+|| player.getX() == 2603 && player.getY() == 3230
+|| player.getX() == 2698 && player.getY() == 3725
+|| player.getX() == 2833 && player.getY() == 3857
+|| player.getX() == 2833 && player.getY() == 3857

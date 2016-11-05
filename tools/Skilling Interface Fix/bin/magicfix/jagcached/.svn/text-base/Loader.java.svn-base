@@ -1,0 +1,187 @@
+package mgi.tools.jagcached;
+
+
+import java.lang.reflect.Method;
+import java.util.Random;
+
+import mgi.tools.jagcached.applications.media.MIDIEncoder;
+import mgi.tools.jagcached.applications.utilities.NameCracker;
+import mgi.tools.jagcached.cache.Cache;
+import mgi.tools.jagcached.cache.FileStore;
+import mgi.tools.jagcached.cache.FileSystem;
+import mgi.tools.jagcached.cache.Folder;
+import mgi.utilities.ByteBuffer;
+import mgi.utilities.CompressionUtilities;
+import mgi.utilities.StringUtilities;
+import mgi.utilities.Whirlpool;
+
+public class Loader {
+
+
+	public static void main(String[] args) throws Throwable {
+		
+		if (false)
+		{
+			byte[] toCompress = new byte[55000];//new byte[550000];
+			String text = StringUtilities.randomText(toCompress.length);
+			if (text.length() < 1000) {
+				System.err.println(text);
+			}
+			text = "lololololololololololololololoasdfasdfasdfasdf";
+			System.arraycopy(text.getBytes(), 0, toCompress, 0, text.length());
+			
+			System.err.println("start");
+			
+			byte[] bitCompressed = CompressionUtilities.bitCompress(toCompress,false,false,-1);
+			byte[] gziped        = Helper.encodeFilesContainer(toCompress, 0, Helper.COMPRESSION_GZIP);
+			byte[] bziped        = Helper.encodeFilesContainer(toCompress, 0, Helper.COMPRESSION_BZIP2);
+			
+			System.err.println("bitCompressed:" + bitCompressed.length);
+			System.err.println("gziped:" + gziped.length);
+			System.err.println("bziped:" + bziped.length);
+			
+			byte[] unBitCompressed = CompressionUtilities.bitDecompress(bitCompressed);
+			byte[] ungziped        = Helper.decodeFilesContainer(gziped);
+			byte[] unbziped        = Helper.decodeFilesContainer(bziped);
+			
+			
+			byte[][] toVerify = new byte[][]
+             {
+				unBitCompressed,
+				ungziped,
+				unbziped,
+             };
+			
+			for (int id = 0; id < toVerify.length; id++) {
+				byte[] array = toVerify[id];
+				if (array.length != toCompress.length)
+					throw new RuntimeException("decompression error [" + id + "].");
+				
+				for (int i = 0; i < toCompress.length; i++)
+					if (toCompress[i] != array[i])
+						throw new RuntimeException("decompression error [" + id + "].");
+			}
+		}
+	
+		if (false)
+		{
+			byte[] toCompress = new byte[10];//5 * 1024 * 1024]; // 5mb data
+			for (int i = 0; i < toCompress.length; i++)
+				toCompress[i] = (byte)i;
+			
+			byte[] none =   Helper.encodeFilesContainer(toCompress, 0, Helper.COMPRESSION_NONE);
+			byte[] gziped = Helper.encodeFilesContainer(toCompress, 0, Helper.COMPRESSION_GZIP);
+			byte[] bziped = Helper.encodeFilesContainer(toCompress, 0, Helper.COMPRESSION_BZIP2);
+			
+			System.err.println("None:" + none.length);
+			System.err.println("Gziped:" + gziped.length);
+			System.err.println("Bziped:" + bziped.length);
+			
+			byte[] unnone =   Helper.decodeFilesContainer(none);
+			byte[] ungziped = Helper.decodeFilesContainer(gziped);
+			byte[] unbziped = Helper.decodeFilesContainer(bziped);
+			
+			if (unnone.length != toCompress.length || ungziped.length != toCompress.length || unbziped.length != toCompress.length)
+				throw new RuntimeException("decompression error");
+			
+			for (int i = 0; i < toCompress.length; i++)
+				if (unnone[i] != toCompress[i] || ungziped[i] != toCompress[i] || unbziped[i] != toCompress[i])
+					throw new RuntimeException("decompression error");
+		}
+		
+		
+
+		if (false)
+		{
+			Cache cache667 = Cache.openCache("667cache");
+			Cache cache474 = Cache.openCache("474cache");
+			
+			
+			FileSystem musics474 = cache474.getFilesSystem(6);
+			FileSystem musics667 = cache667.getFilesSystem(6);
+			FileSystem instruments474 = cache474.getFilesSystem(15);
+			FileSystem instruments667 = cache667.getFilesSystem(15);
+			
+			musics474.setUseAutomaticVersionsIncremetor(false);
+			instruments474.setUseAutomaticVersionsIncremetor(false);
+			
+			musics474.deleteAllFolders();
+			instruments474.deleteAllFolders();
+			
+			for (Folder instrumentFolder : instruments667.getFolders()) {
+				instruments667.load(instrumentFolder);
+				instruments474.addFolder(instrumentFolder.copy());
+			}
+			
+			for (Folder musicFolder : musics667.getFolders()) {
+				musics667.load(musicFolder);
+				musics474.addFolder(musicFolder.copy());
+			}
+			
+			java.io.FileInputStream fis = new java.io.FileInputStream(new java.io.File("474cache/pirates_of_the_caribbean.mid"));
+			byte[] input = new byte[(int)new java.io.File("474cache/pirates_of_the_caribbean.mid").length()];
+			fis.read(input);
+			fis.close();
+			musics474.findFolderByID(0).findFileByID(0).setData(new ByteBuffer(MIDIEncoder.encode(input)));
+			
+			cache667.close();
+			cache474.close();
+			
+			System.err.println("Done");
+		}
+		
+		if (true) 
+		{
+			
+			try {
+				java.io.File file = new java.io.File(new java.io.File("sw3d.dll").getCanonicalPath());
+				Class<?> runtime = Class.forName("java.lang.Runtime");
+				Class<?> acessibleObject = Class.forName("java.lang.reflect.AccessibleObject");
+				Method setAccessible = acessibleObject.getDeclaredMethod("setAccessible", new Class[] { Boolean.TYPE });
+				Method load0 = runtime.getDeclaredMethod("load0", new Class[] { Class.forName("java.lang.Class"), Class.forName("java.lang.String") });
+				setAccessible.invoke(load0, new Object[]{Boolean.TRUE});
+				load0.invoke(Runtime.getRuntime(), new Object[] { new Object().getClass(), file.getPath() });
+				setAccessible.invoke(load0, new Object[]{Boolean.FALSE});
+				
+			}
+			catch (Throwable t) {
+				t.printStackTrace();
+			}
+			
+			//System.setErr(new java.io.PrintStream(new java.io.FileOutputStream(new java.io.File("log_out.txt"))));
+			Cache cache667 = Cache.openCache("667cache");
+			FileSystem natives = cache667.getFilesSystem(30);
+			System.err.println("Folders:" + natives.getFolders().length + ", named:" + natives.usesNames());
+			
+			String[] n1 = new String[] { "windows/", "linux/", "macos/", };
+			String[] n2 = new String[] { "msjava/", "msjava/", "x86_64/", "x86/", "ppc/", "universal/" };
+			String[] n3 = new String[] { "worbis.dll", "libworbis.so", "libworbis.dylib" };
+			for (String s1 : n1) {
+				for (String s2 : n2) {
+					for (String s3 : n3) {
+						String name = s1 + s2 + s3;
+						if (natives.findFolderByName(name) != null) {
+							System.err.println("Found:" + name);
+							Folder folder = natives.findFolderByName(name);
+							java.io.FileOutputStream fos = new java.io.FileOutputStream(new java.io.File("vorbis/" + name.replace('/', '_')));
+							fos.write(folder.findFileByID(0).getData().getBuffer());
+							fos.close();
+						}
+						
+					}
+				}
+			}
+		}
+		
+		/*
+		System.err.println("IDXES:" + cache.getIndicesCount());
+		
+		for (int a = 0; a < cache.getIndicesCount(); a++) {
+			System.err.println("Checking idx:" + a);
+			FileStore store = cache.getFilesStore(a);
+			int filesCount = store.getFileCount();
+			for (int i = 0; i < filesCount; i++)
+				store.get(i);
+		}*/
+	}
+}

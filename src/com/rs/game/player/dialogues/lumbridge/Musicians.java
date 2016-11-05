@@ -1,7 +1,7 @@
 package com.rs.game.player.dialogues.lumbridge;
 
-import com.rs.game.player.dialogues.Dialogue;
 import com.rs.game.player.actions.Listen;
+import com.rs.game.player.dialogues.Dialogue;
 
 /**
  * The Feather Dialogue for Musicians.

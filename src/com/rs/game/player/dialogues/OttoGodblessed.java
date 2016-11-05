@@ -1,8 +1,6 @@
 package com.rs.game.player.dialogues;
 
 import com.rs.cache.loaders.NPCDefinitions;
-import com.rs.game.ForceTalk;
-import com.rs.utils.ShopsHandler;
 
 public class OttoGodblessed extends Dialogue {
 

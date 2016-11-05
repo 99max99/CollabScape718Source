@@ -5,7 +5,6 @@ import com.rs.game.WorldTile;
 import com.rs.game.npc.others.LivingRock;
 import com.rs.game.player.Player;
 import com.rs.game.player.Skills;
-import com.rs.game.player.actions.mining.MiningBase;
 import com.rs.utils.Utils;
 /**
  * 

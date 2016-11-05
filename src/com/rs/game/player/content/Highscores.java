@@ -5,7 +5,6 @@ import java.sql.ResultSet;
 import com.rs.game.DatabasePool;
 import com.rs.game.player.Player;
 import com.rs.game.player.Skills;
-import com.rs.utils.Logger;
 import com.rs.utils.Utils;
 
 public class Highscores extends DatabasePool {

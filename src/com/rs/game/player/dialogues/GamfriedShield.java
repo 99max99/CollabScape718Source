@@ -1,7 +1,6 @@
 package com.rs.game.player.dialogues;
 
 import com.rs.game.item.Item;
-import com.rs.game.player.dialogues.Dialogue;
 
 public class GamfriedShield extends Dialogue {
 

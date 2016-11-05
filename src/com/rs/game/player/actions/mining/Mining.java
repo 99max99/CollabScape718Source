@@ -7,8 +7,6 @@ import com.rs.game.World;
 import com.rs.game.WorldObject;
 import com.rs.game.player.Player;
 import com.rs.game.player.Skills;
-import com.rs.game.player.content.Deaths;
-import com.rs.game.player.content.ShootingStar;
 import com.rs.game.player.content.Skillers;
 import com.rs.utils.Misc;
 import com.rs.utils.Utils;

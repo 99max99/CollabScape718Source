@@ -4,7 +4,6 @@ import com.rs.game.player.actions.Summoning;
 import com.rs.game.player.content.pet.Pets;
 import com.rs.game.player.controlers.dung.DungLobby;
 import com.rs.game.player.dialogues.Dialogue;
-import com.rs.utils.ShopsHandler;
 
 /**
  * 

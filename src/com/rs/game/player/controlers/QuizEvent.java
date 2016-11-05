@@ -3,7 +3,6 @@ package com.rs.game.player.controlers;
 import com.rs.game.Animation;
 import com.rs.game.WorldObject;
 import com.rs.game.WorldTile;
-import com.rs.game.player.content.magic.Magic;
 import com.rs.game.tasks.WorldTask;
 import com.rs.game.tasks.WorldTasksManager;
 

@@ -6,7 +6,6 @@ import com.rs.game.Graphics;
 import com.rs.game.World;
 import com.rs.game.WorldObject;
 import com.rs.game.player.Player;
-import com.rs.game.player.PossessedObject;
 import com.rs.game.player.Skills;
 import com.rs.game.player.actions.mining.MiningBase;
 import com.rs.game.player.content.Skillers;

@@ -1,7 +1,6 @@
 package com.rs.game.player.dialogues;
 
 import com.rs.game.player.content.GraveStoneSelection;
-import com.rs.game.player.dialogues.Dialogue;
 import com.rs.utils.Utils;
 
 public class GraveStones extends Dialogue {

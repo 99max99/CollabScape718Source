@@ -1,7 +1,5 @@
 package com.rs.game.player.dialogues;
 
-import com.rs.Settings;
-
 public class Lawgof extends Dialogue {
 
 	int npcId = 208;

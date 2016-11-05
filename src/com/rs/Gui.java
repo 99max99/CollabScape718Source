@@ -71,7 +71,7 @@ public class Gui extends JFrame {
 	 * Create the frame.
 	 */
 	public Gui() {
-		setTitle("Exylum's Server Panel");
+		setTitle("MaxScape's Server Panel");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 611, 361);
 		contentPane = new JPanel();

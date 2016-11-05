@@ -1,19 +1,11 @@
 package com.rs.net.decoders;
 
-import java.awt.Desktop;
-import java.net.HttpURLConnection;
-import java.net.URI;
-import java.net.URL;
-import java.net.URLConnection;
-
 import com.rs.Settings;
 import com.rs.cache.Cache;
 import com.rs.game.World;
-import com.rs.game.mysql.impl.ForumIntegration;
 import com.rs.game.player.Player;
 import com.rs.io.InputStream;
 import com.rs.net.Session;
-import com.rs.utils.AntiFlood;
 import com.rs.utils.IsaacKeyPair;
 import com.rs.utils.Logger;
 import com.rs.utils.MachineInformation;

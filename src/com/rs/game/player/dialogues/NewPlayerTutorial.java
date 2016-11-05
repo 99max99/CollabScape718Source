@@ -1,7 +1,5 @@
 package com.rs.game.player.dialogues;
 
-import com.rs.game.WorldTile;
-
 /**
  * 
  * @author Jordan (Plato)

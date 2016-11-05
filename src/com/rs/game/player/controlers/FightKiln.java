@@ -12,7 +12,6 @@ import com.rs.game.WorldObject;
 import com.rs.game.WorldTile;
 import com.rs.game.item.Item;
 import com.rs.game.npc.NPC;
-import com.rs.game.npc.familiar.Familiar;
 import com.rs.game.npc.fightkiln.FightKilnNPC;
 import com.rs.game.npc.fightkiln.HarAken;
 import com.rs.game.npc.fightkiln.TokHaarKetDill;

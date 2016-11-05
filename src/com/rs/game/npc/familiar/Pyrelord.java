@@ -3,7 +3,6 @@ package com.rs.game.npc.familiar;
 import com.rs.game.WorldTile;
 import com.rs.game.player.Player;
 import com.rs.game.player.actions.Summoning.Pouches;
-import com.rs.game.npc.familiar.Familiar;
 
 
 public class Pyrelord extends Familiar {

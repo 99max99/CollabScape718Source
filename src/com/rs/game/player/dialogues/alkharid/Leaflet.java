@@ -1,7 +1,6 @@
 package com.rs.game.player.dialogues.alkharid;
 
 import com.rs.game.player.dialogues.Dialogue;
-import com.rs.utils.ShopsHandler;
 
 public class Leaflet extends Dialogue {
 

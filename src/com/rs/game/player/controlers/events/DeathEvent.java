@@ -18,7 +18,6 @@ import com.rs.game.player.controlers.Controler;
 import com.rs.game.tasks.WorldTask;
 import com.rs.game.tasks.WorldTasksManager;
 import com.rs.net.decoders.WorldPacketsDecoder;
-import com.rs.utils.Logger;
 import com.rs.utils.Utils;
 
 public class DeathEvent extends Controler {

@@ -9,7 +9,6 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-import com.rs.Launcher;
 import com.rs.cores.FastThreadFactory;
 import com.rs.game.task.Task.TickType;
 import com.rs.utils.Logger;

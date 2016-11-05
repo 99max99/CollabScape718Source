@@ -1,8 +1,9 @@
 package com.rs.game.player.content;
 
+import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Map;
-import java.text.DecimalFormat;
+
 import com.rs.game.item.Item;
 import com.rs.game.player.Player;
 

@@ -1,7 +1,6 @@
 package com.rs.game.player.dialogues;
 
 import com.rs.game.minigames.WarriorsGuild;
-import com.rs.game.player.dialogues.Dialogue;
 
 public class KamfreendaDefender extends Dialogue {
 

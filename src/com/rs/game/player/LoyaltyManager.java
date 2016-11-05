@@ -1,6 +1,7 @@
 package com.rs.game.player;
 
 import java.util.TimerTask;
+
 import com.rs.cores.CoresManager;
 
 public class LoyaltyManager {

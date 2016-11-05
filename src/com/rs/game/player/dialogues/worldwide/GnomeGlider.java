@@ -1,7 +1,6 @@
 package com.rs.game.player.dialogues.worldwide;
 
 import com.rs.game.player.dialogues.Dialogue;
-import com.rs.utils.ShopsHandler;
 
 /**
  *@Author Danny

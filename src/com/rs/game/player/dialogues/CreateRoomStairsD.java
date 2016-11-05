@@ -3,7 +3,6 @@ package com.rs.game.player.dialogues;
 import com.rs.game.player.content.construction.House.RoomReference;
 import com.rs.game.player.content.construction.HouseConstants.Builds;
 import com.rs.game.player.content.construction.HouseConstants.Room;
-import com.rs.game.player.dialogues.Dialogue;
 
 public class CreateRoomStairsD extends Dialogue {
 

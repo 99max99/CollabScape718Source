@@ -2,7 +2,7 @@ package com.rs.game.player.actions.summoning;
 
 import java.util.HashMap;
 import java.util.Map;
-import com.rs.game.player.actions.summoning.SummoningPouch;
+
 import com.rs.game.item.Item;
 
 /**

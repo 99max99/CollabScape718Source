@@ -2,33 +2,31 @@ package com.rs.game.player.controlers;
 
 import java.util.HashMap;
 
-import com.rs.game.player.controlers.DungeonControler;
-import com.rs.game.player.controlers.dung.RuneDungGame;
-import com.rs.game.player.controlers.dung.RuneDungLobby;
-import com.rs.game.player.controlers.Controler;
-import com.rs.game.player.controlers.darkinvasion.DarkInvasion;
 import com.rs.game.minigames.BrimhavenAgility;
 import com.rs.game.minigames.RefugeOfFear;
+import com.rs.game.minigames.WarriorsGuild;
 import com.rs.game.minigames.clanwars.FfaZone;
 import com.rs.game.minigames.clanwars.RequestController;
 import com.rs.game.minigames.clanwars.WarControler;
 import com.rs.game.minigames.creations.StealingCreationGame;
 import com.rs.game.minigames.creations.StealingCreationLobby;
-import com.rs.game.player.content.botanybay.BotanyBay;
 import com.rs.game.minigames.duel.DuelArena;
 import com.rs.game.minigames.duel.DuelControler;
+import com.rs.game.minigames.rfd.RecipeforDisaster;
+import com.rs.game.minigames.zombies.Zombies;
+import com.rs.game.player.content.botanybay.BotanyBay;
 import com.rs.game.player.controlers.castlewars.CastleWarsPlaying;
 import com.rs.game.player.controlers.castlewars.CastleWarsWaiting;
+import com.rs.game.player.controlers.darkinvasion.DarkInvasion;
+import com.rs.game.player.controlers.dung.RuneDungGame;
+import com.rs.game.player.controlers.dung.RuneDungLobby;
 import com.rs.game.player.controlers.events.DeathEvent;
 import com.rs.game.player.controlers.fightpits.FightPitsArena;
 import com.rs.game.player.controlers.fightpits.FightPitsLobby;
 import com.rs.game.player.controlers.pestcontrol.PestControlGame;
 import com.rs.game.player.controlers.pestcontrol.PestControlLobby;
 import com.rs.game.player.controlers.trollinvasion.TrollInvasion;
-import com.rs.game.minigames.rfd.RecipeforDisaster;
-import com.rs.game.minigames.zombies.Zombies;
 import com.rs.utils.Logger;
-import com.rs.game.minigames.WarriorsGuild;
 
 public class ControlerHandler {
 

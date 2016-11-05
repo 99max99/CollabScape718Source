@@ -1,9 +1,6 @@
 package com.rs.game.player.dialogues;
 
-import com.rs.cache.loaders.NPCDefinitions;
 import com.rs.game.Animation;
-
-
 import com.rs.game.player.Skills;
 
 

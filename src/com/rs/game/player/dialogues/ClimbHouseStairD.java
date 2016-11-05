@@ -1,7 +1,6 @@
 package com.rs.game.player.dialogues;
 
 import com.rs.game.WorldObject;
-import com.rs.game.player.dialogues.Dialogue;
 
 public class ClimbHouseStairD extends Dialogue {
 

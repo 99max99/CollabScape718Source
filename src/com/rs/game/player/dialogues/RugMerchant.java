@@ -5,7 +5,6 @@ import java.util.TimerTask;
 import com.rs.cores.CoresManager;
 import com.rs.game.Graphics;
 import com.rs.game.WorldTile;
-import com.rs.game.player.dialogues.Dialogue;
 
 public class RugMerchant extends Dialogue {
 

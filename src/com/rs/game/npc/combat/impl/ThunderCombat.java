@@ -7,8 +7,8 @@ import com.rs.game.Graphics;
 import com.rs.game.npc.NPC;
 import com.rs.game.npc.combat.CombatScript;
 import com.rs.game.npc.combat.NPCCombatDefinitions;
-import com.rs.utils.Utils;
 import com.rs.game.player.Player;
+import com.rs.utils.Utils;
 
 public class ThunderCombat extends CombatScript {
 

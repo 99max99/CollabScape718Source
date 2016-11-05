@@ -2,7 +2,6 @@ package com.rs.game.player.actions.objects;
 
 import com.rs.game.Animation;
 import com.rs.game.WorldObject;
-import com.rs.game.WorldTile;
 import com.rs.game.player.Player;
 import com.rs.game.player.controlers.Barrows;
 

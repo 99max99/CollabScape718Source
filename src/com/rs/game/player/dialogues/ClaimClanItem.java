@@ -2,7 +2,6 @@ package com.rs.game.player.dialogues;
 
 import com.rs.cache.loaders.ItemDefinitions;
 import com.rs.game.item.Item;
-import com.rs.game.player.dialogues.Dialogue;
 
 public class ClaimClanItem extends Dialogue {
 

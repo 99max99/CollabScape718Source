@@ -1,7 +1,5 @@
 package com.rs.game.player.dialogues;
 
-import com.rs.game.player.dialogues.Dialogue;
-
 public class Ghommel extends Dialogue {
 
     private int npcId = 8266;

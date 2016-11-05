@@ -1,7 +1,5 @@
 package com.rs.game.player.actions.objects;
 
-import java.util.Random;
-
 import com.rs.game.World;
 import com.rs.game.WorldObject;
 import com.rs.game.WorldTile;

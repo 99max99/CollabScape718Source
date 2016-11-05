@@ -1,7 +1,5 @@
 package com.rs.game.player.dialogues;
 
-import com.rs.utils.ShopsHandler;
-
 /**
  *@Author Danny
  */

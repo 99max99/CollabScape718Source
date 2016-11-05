@@ -46,8 +46,6 @@ private void giveitems(Player player) {
 */
 package com.rs.game.player;
 
-import com.rs.game.player.StarterMap;
-import com.rs.game.player.Player;
 import com.rs.game.player.content.FriendChatsManager;
 
 public class Starter {

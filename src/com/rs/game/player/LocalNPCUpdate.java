@@ -6,11 +6,11 @@ import java.util.List;
 
 import com.rs.Settings;
 import com.rs.game.Hit;
+import com.rs.game.SecondaryBar;
 import com.rs.game.World;
 import com.rs.game.npc.NPC;
 import com.rs.io.OutputStream;
 import com.rs.utils.Utils;
-import com.rs.game.SecondaryBar;
 
 public final class LocalNPCUpdate {
 

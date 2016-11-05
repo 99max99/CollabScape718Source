@@ -1,6 +1,5 @@
 package com.rs.game.player.dialogues;
 
-import com.rs.Settings;
 import com.rs.game.player.Skills;
 import com.rs.game.player.content.AncientEffigies;
 import com.rs.utils.Utils;

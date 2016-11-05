@@ -9,8 +9,9 @@ import java.util.concurrent.TimeUnit;
 
 import com.rs.cache.loaders.NPCDefinitions;
 import com.rs.cores.CoresManager;
-import com.rs.game.WorldTile;
 import com.rs.game.RegionBuilder;
+import com.rs.game.WorldTile;
+import com.rs.game.item.Item;
 import com.rs.game.npc.NPC;
 import com.rs.game.npc.pest.PestMonsters;
 import com.rs.game.npc.pest.PestPortal;
@@ -23,7 +24,6 @@ import com.rs.game.tasks.WorldTask;
 import com.rs.game.tasks.WorldTasksManager;
 import com.rs.utils.Logger;
 import com.rs.utils.Utils;
-import com.rs.game.item.Item;
 
 public class PestControl {
 

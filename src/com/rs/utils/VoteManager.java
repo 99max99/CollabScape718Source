@@ -4,12 +4,10 @@ package com.rs.utils;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-
 import com.rs.Settings;
 import com.rs.game.DatabasePool;
 import com.rs.game.World;
 import com.rs.game.player.Player;
-import com.rs.utils.Utils;
 
 
 public class VoteManager extends DatabasePool{

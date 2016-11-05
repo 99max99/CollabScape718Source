@@ -4,7 +4,6 @@ import com.rs.game.Animation;
 import com.rs.game.WorldObject;
 import com.rs.game.WorldTile;
 import com.rs.game.player.Player;
-import com.rs.game.player.content.magic.Magic;
 
 /*
  * @Author Danny

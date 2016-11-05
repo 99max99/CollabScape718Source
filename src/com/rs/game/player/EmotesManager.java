@@ -3,7 +3,6 @@ package com.rs.game.player;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-
 import com.rs.cache.loaders.ItemDefinitions;
 import com.rs.cache.loaders.NPCDefinitions;
 import com.rs.game.Animation;
@@ -12,13 +11,11 @@ import com.rs.game.Graphics;
 import com.rs.game.World;
 import com.rs.game.WorldTile;
 import com.rs.game.item.Item;
-import com.rs.game.item.ItemsContainer;
 import com.rs.game.npc.NPC;
 import com.rs.game.tasks.WorldTask;
 import com.rs.game.tasks.WorldTasksManager;
 import com.rs.net.decoders.WorldPacketsDecoder;
 import com.rs.utils.Utils;
-import com.rs.game.player.Equipment;
 
 
 

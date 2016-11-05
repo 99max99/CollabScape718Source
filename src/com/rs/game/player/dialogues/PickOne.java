@@ -1,8 +1,5 @@
 package com.rs.game.player.dialogues;
 
-import com.rs.game.WorldTile;
-import com.rs.game.player.content.magic.Magic;
-
 /**
  * @author Danny
  */

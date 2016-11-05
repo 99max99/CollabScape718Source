@@ -1,6 +1,5 @@
 package com.rs.game.player.actions.objects;
 
-import com.rs.game.player.dialogues.quests.CooksAssistant;
 import com.rs.game.Animation;
 import com.rs.game.ForceTalk;
 import com.rs.game.World;
@@ -8,6 +7,7 @@ import com.rs.game.WorldObject;
 import com.rs.game.WorldTile;
 import com.rs.game.player.Player;
 import com.rs.game.player.Skills;
+import com.rs.game.player.dialogues.quests.CooksAssistant;
 import com.rs.utils.Misc;
 
 

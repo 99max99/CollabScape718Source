@@ -1,7 +1,6 @@
 package com.rs.game.player.dialogues;
 
 import com.rs.game.player.content.Slayer.SlayerMaster;
-import com.rs.game.player.dialogues.Dialogue;
 
 public class QuickTaskD extends Dialogue {
 

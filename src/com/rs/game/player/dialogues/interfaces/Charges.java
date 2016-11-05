@@ -1,6 +1,5 @@
 package com.rs.game.player.dialogues.interfaces;
 
-import com.rs.game.WorldTile;
 import com.rs.game.player.dialogues.Dialogue;
 
 public class Charges extends Dialogue {

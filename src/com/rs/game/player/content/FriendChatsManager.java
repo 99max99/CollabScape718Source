@@ -7,13 +7,13 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import com.rs.Settings;
 import com.rs.game.World;
 import com.rs.game.minigames.clanwars.ClanWars;
+import com.rs.game.player.ChatMessage;
 import com.rs.game.player.FriendsIgnores;
 import com.rs.game.player.Player;
 import com.rs.game.player.QuickChatMessage;
 import com.rs.io.OutputStream;
 import com.rs.utils.SerializableFilesManager;
 import com.rs.utils.Utils;
-import com.rs.game.player.ChatMessage;
 
 public class FriendChatsManager {
 

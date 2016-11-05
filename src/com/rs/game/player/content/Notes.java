@@ -2,9 +2,6 @@ package com.rs.game.player.content;
 
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-
 
 import com.rs.game.player.Player;
 

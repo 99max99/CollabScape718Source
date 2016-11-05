@@ -1,7 +1,5 @@
 package com.rs.game.player.dialogues;
 
-import com.rs.game.player.dialogues.Dialogue;
-
 public class Shanomi extends Dialogue {
 
     private int npcId = 4290;

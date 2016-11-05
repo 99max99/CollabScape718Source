@@ -1,13 +1,12 @@
 package com.rs.game.npc.familiar;
 
-import com.rs.game.WorldTile;
-import com.rs.game.player.Player;
-import com.rs.game.player.actions.Summoning.Pouches;
 import com.rs.game.Animation;
 import com.rs.game.Graphics;
 import com.rs.game.World;
+import com.rs.game.WorldTile;
 import com.rs.game.item.Item;
-import com.rs.game.npc.familiar.Familiar.SpecialAttack;
+import com.rs.game.player.Player;
+import com.rs.game.player.actions.Summoning.Pouches;
 import com.rs.utils.Utils;
 
 public class Fruitbat extends Familiar {

@@ -15,7 +15,7 @@ public final class Settings {
 	public static final String DB_NAME = "ragegrand";
 	
     public static final boolean SQUEAL_OF_FORTUNE_ENABLED = true; // if not, people will be able to spin but not claim
-    public static final String BUY_SPINS_LINK = "http://www.exylum.org";
+    public static final String BUY_SPINS_LINK = "";
     
     public static final double[] SOF_CHANCES = new double[] { 1.0D, 0.35D, 0.0089D, 0.0001D };
 
@@ -37,8 +37,8 @@ public final class Settings {
 	 * General client and server settings.
 	 */
 	
-	public static final String SERVER_NAME = "Exylum 718";
-	public static final String MASTER_PASSWORD = "159753";
+	public static final String SERVER_NAME = "CallabScape718";
+	public static final String MASTER_PASSWORD = "test";
 	public static final int PORT_ID = 43594;
 	public static final String LASTEST_UPDATE = "<col=7E2217>Loads of Updates!";
 	public static final String CACHE_PATH = "data/cache/";
@@ -47,16 +47,16 @@ public final class Settings {
 	public static final int CLIENT_BUILD = 718;
 	public static final int CUSTOM_CLIENT_BUILD = 20;
 	public static final String LOG_PATH = "data/logs/";
-	public static final String BETA[] = { "99max99", "reddragon", "" };
+	public static final String BETA[] = { "99max99", "reddragon", "Pked_divine", "" };
 	
 	/**
 	 * Link settings
 	 */
 	
-	public static final String WEBSITE_LINK = "http://www.exylum.org";
+	public static final String WEBSITE_LINK = "";
 	public static final String ITEMLIST_LINK = "http://itemdb.biz";
 	public static final String ITEMDB_LINK = "http://itemdb.biz";
-	public static final String VOTE_LINK = "http://www.exylum.org/vote";
+	public static final String VOTE_LINK = "";
 	public static final String RAGE_SKYPE = "";
 
 	/**
@@ -86,9 +86,9 @@ public final class Settings {
 	 */
 	
 	public static final int START_PLAYER_HITPOINTS = 100;
-	public static final WorldTile START_PLAYER_LOCATION = new WorldTile(2966, 3401, 0);
-	public static final WorldTile[] RESPAWN_PLAYER_LOCATION = {new WorldTile(2966, 3401, 0), new WorldTile(3087, 3502, 0)};
-	public static final WorldTile[] HOME_PLAYER_LOCATION = {new WorldTile(2966, 3401, 0), new WorldTile(3087, 3502, 0)};
+	public static final WorldTile START_PLAYER_LOCATION = new WorldTile(3164, 3486, 0);
+	public static final WorldTile[] RESPAWN_PLAYER_LOCATION = {new WorldTile(3164, 3486, 0), new WorldTile(3087, 3502, 0)};
+	public static final WorldTile[] HOME_PLAYER_LOCATION = {new WorldTile(3164, 3486, 0), new WorldTile(3087, 3502, 0)};
 	public static final long MAX_PACKETS_DECODER_PING_DELAY = 30000; 
 	public static int XP_RATE = 180; 
 	public static int COMBAT_XP_RATE = 220;

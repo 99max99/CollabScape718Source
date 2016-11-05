@@ -1,20 +1,7 @@
 package com.rs.game.player.dialogues.worldwide;
 
-import com.rs.game.player.content.PlayerLook;
-import com.rs.utils.ShopsHandler;
 import com.rs.game.World;
-import com.rs.utils.SerializableFilesManager;
-import com.rs.utils.Utils;
-import com.rs.game.player.Player;
-import com.rs.cache.loaders.NPCDefinitions;
-import com.rs.game.Animation;
-import com.rs.game.ForceTalk;
-import com.rs.game.Graphics;
-import com.rs.game.WorldTile;
-import com.rs.game.npc.NPC;
-import com.rs.game.player.content.magic.Magic;
 import com.rs.game.player.dialogues.Dialogue;
-import com.rs.utils.ShopsHandler;
 
 
 public class KillStreak extends Dialogue {

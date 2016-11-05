@@ -1,11 +1,10 @@
 package com.rs.game.player.content;
  
 import java.io.Serializable;
- 
+
 import com.rs.game.player.Player;
 import com.rs.game.player.Skills;
 import com.rs.utils.Utils;
-import com.rs.game.npc.*;
  
 /**
  * @author Wolfey

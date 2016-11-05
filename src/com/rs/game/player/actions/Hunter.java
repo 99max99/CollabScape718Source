@@ -1,18 +1,5 @@
 package com.rs.game.player.actions;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import com.rs.game.Animation;
-import com.rs.game.GameEngine;
-import com.rs.game.Graphics;
-import com.rs.game.World;
-import com.rs.game.item.Item;
-import com.rs.game.npc.NPC;
-import com.rs.game.player.Player;
-import com.rs.game.player.Skills;
-import com.rs.utils.Utils;
-
 public class Hunter {
 
 	/*public static final Animation CAPTURE_ANIMATION = new Animation(6606);

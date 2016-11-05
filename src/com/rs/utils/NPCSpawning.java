@@ -7,7 +7,6 @@ import java.util.Map;
 
 import com.rs.game.World;
 import com.rs.game.WorldTile;
-import com.rs.game.item.Item;
 import com.rs.game.npc.NPC;
 
 public class NPCSpawning {

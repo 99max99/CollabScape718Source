@@ -12,7 +12,6 @@ import java.util.ConcurrentModificationException;
 import java.util.HashMap;
 
 import com.rs.game.player.Player;
-import com.rs.utils.Logger;
 import com.rs.game.player.content.clans.Clan;
 import com.rs.game.player.content.grandExchange.Offer;
 import com.rs.game.player.content.grandExchange.OfferHistory;

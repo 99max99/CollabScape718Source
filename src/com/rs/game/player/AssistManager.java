@@ -1,8 +1,5 @@
 package com.rs.game.player;
 
-import com.rs.game.player.Player;
-import com.rs.game.player.Skills;
-
 public class AssistManager {
 
     private static final byte[] SKILL_ORDER = { Skills.RUNECRAFTING, Skills.CRAFTING, Skills.FLETCHING, Skills.CONSTRUCTION, Skills.FARMING, Skills.MAGIC, Skills.SMITHING, Skills.COOKING, Skills.HERBLORE };

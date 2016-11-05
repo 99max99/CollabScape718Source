@@ -11,7 +11,6 @@ import com.rs.game.item.Item;
 import com.rs.game.player.Player;
 import com.rs.game.player.Skills;
 import com.rs.game.player.actions.Action;
-import com.rs.game.player.actions.Cooking.Cookables;
 
 @SuppressWarnings("unused")
 public class BonesOnAltar extends Action {

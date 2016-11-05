@@ -8,8 +8,6 @@ import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.TimeUnit;
 
-import com.rs.game.player.controlers.dung.Floors;
-
 import com.rs.cores.CoresManager;
 import com.rs.game.Entity;
 import com.rs.game.RegionBuilder;

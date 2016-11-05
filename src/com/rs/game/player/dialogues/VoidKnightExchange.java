@@ -1,7 +1,6 @@
 package com.rs.game.player.dialogues;
 
 import com.rs.game.minigames.pest.CommendationExchange;
-import com.rs.game.player.dialogues.Dialogue;
 
 public class VoidKnightExchange extends Dialogue {
 

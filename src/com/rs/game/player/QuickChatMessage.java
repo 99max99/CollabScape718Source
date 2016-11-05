@@ -1,7 +1,5 @@
 package com.rs.game.player;
 
-import com.rs.game.player.PublicChatMessage;
-
 public class QuickChatMessage extends PublicChatMessage {
 
     private int fileId;

@@ -5,13 +5,13 @@
 ***/
 package com.rs.game.mysql.impl;
 
-import com.rs.game.World;
-import com.rs.game.player.Player;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+
+import com.rs.game.World;
+import com.rs.game.player.Player;
 
 public class ForumIntegration {
 

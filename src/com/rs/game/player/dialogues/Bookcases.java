@@ -2,7 +2,6 @@ package com.rs.game.player.dialogues;
 
 import com.rs.game.WorldObject;
 import com.rs.game.player.content.construction.BookCase;
-import com.rs.game.player.content.construction.FirePlace;
 
 /**
  * @author Danny

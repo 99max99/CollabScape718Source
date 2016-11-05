@@ -5,9 +5,7 @@ import com.rs.game.Animation;
 import com.rs.game.ForceTalk;
 import com.rs.game.Hit;
 import com.rs.game.Hit.HitLook;
-import com.rs.game.player.Skills;
 import com.rs.game.player.dialogues.Dialogue;
-import com.rs.utils.ShopsHandler;
 
 public class DragonInn extends Dialogue {
 	

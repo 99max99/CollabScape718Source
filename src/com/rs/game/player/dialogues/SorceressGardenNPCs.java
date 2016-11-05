@@ -2,7 +2,6 @@ package com.rs.game.player.dialogues;
 
 import com.rs.game.npc.NPC;
 import com.rs.game.player.controlers.SorceressGarden;
-import com.rs.game.player.dialogues.Dialogue;
 
 public class SorceressGardenNPCs extends Dialogue {
 

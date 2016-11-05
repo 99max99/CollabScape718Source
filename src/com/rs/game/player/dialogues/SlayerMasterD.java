@@ -2,7 +2,6 @@ package com.rs.game.player.dialogues;
 
 import com.rs.game.player.Skills;
 import com.rs.game.player.content.Slayer.SlayerMaster;
-import com.rs.game.player.dialogues.Dialogue;
 import com.rs.utils.ShopsHandler;
 import com.rs.utils.Utils;
 

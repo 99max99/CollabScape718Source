@@ -3,12 +3,12 @@ package com.rs.game.player.content;
 import com.rs.cache.loaders.ItemDefinitions;
 import com.rs.game.Entity;
 import com.rs.game.npc.NPC;
-import com.rs.game.player.Player;
 import com.rs.game.npc.fightkiln.HarAken;
 import com.rs.game.npc.fightkiln.HarAkenTentacle;
 import com.rs.game.npc.godwars.zaros.NexMinion;
 import com.rs.game.npc.pest.PestPortal;
 import com.rs.game.npc.qbd.QueenBlackDragon;
+import com.rs.game.player.Player;
 
 public final class Combat {
 

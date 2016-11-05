@@ -1,18 +1,10 @@
 package com.rs.game.player.actions;
 
-import java.util.ArrayList;
-
 import com.rs.cache.loaders.ItemDefinitions;
 import com.rs.game.Animation;
 import com.rs.game.item.Item;
 import com.rs.game.player.Player;
-import com.rs.game.Graphics;
 import com.rs.game.player.Skills;
-import com.rs.game.World;
-import com.rs.game.WorldObject;
-import com.rs.game.tasks.WorldTask;
-import com.rs.game.tasks.WorldTasksManager;
-import com.rs.utils.Utils;
 
 public class FlaxCrafting extends Action {
 

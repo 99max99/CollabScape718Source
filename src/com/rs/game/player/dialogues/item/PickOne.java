@@ -1,7 +1,5 @@
 package com.rs.game.player.dialogues.item;
 
-import com.rs.game.WorldTile;
-import com.rs.game.player.content.magic.Magic;
 import com.rs.game.player.dialogues.Dialogue;
 
 /**

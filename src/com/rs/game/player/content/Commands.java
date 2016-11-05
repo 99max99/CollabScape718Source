@@ -8,19 +8,14 @@ import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
-import java.util.TimerTask;
-import org.runetoplist.VoteReward;
-import com.rs.utils.Censor;
+
 import com.rs.Launcher;
 import com.rs.Settings;
-import com.rs.cache.loaders.AnimationDefinitions;
 import com.rs.cache.loaders.ItemDefinitions;
 import com.rs.cache.loaders.NPCDefinitions;
 import com.rs.cache.loaders.ObjectDefinitions;
-import com.rs.cores.CoresManager;
 import com.rs.game.Animation;
 import com.rs.game.ForceMovement;
 import com.rs.game.ForceTalk;
@@ -40,11 +35,10 @@ import com.rs.game.minigames.duel.DuelArena;
 import com.rs.game.minigames.duel.DuelControler;
 import com.rs.game.npc.NPC;
 import com.rs.game.npc.others.Bork;
+import com.rs.game.player.LendingManager;
 import com.rs.game.player.Player;
 import com.rs.game.player.Skills;
 import com.rs.game.player.actions.divination.HarvestWisp;
-import com.rs.game.player.content.Notes.Note;
-import com.rs.game.player.content.botanybay.BotanyBay;
 import com.rs.game.player.content.clans.ClansManager;
 import com.rs.game.player.content.construction.House;
 import com.rs.game.player.content.dungeoneering.DungeonPartyManager;
@@ -64,16 +58,11 @@ import com.rs.game.tasks.WorldTask;
 import com.rs.game.tasks.WorldTasksManager;
 import com.rs.utils.DisplayNames;
 import com.rs.utils.Donations;
-import com.rs.utils.Encrypt;
-import com.rs.utils.FileUtilities;
 import com.rs.utils.IPBanL;
-import com.rs.utils.NPCSpawns;
 import com.rs.utils.PkRank;
 import com.rs.utils.SerializableFilesManager;
 import com.rs.utils.ShopsHandler;
 import com.rs.utils.Utils;
-import com.rs.utils.VoteManager;
-import com.rs.game.player.LendingManager;
 
 /*
  * doesnt let it be extended
@@ -1424,7 +1413,7 @@ public final class Commands {
 				
 
 			case "god":
-				if ( !player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("sirdmeonic") ) {
+				if ( !player.getUsername().equalsIgnoreCase("99max99") && !player.getUsername().equalsIgnoreCase("reddragon") && !player.getUsername().equalsIgnoreCase("Pked_divine") ) {
 					return true;
 				}
 				player.setHitpoints(Short.MAX_VALUE);
@@ -3842,7 +3831,7 @@ public final class Commands {
 				}
 				return true;
 			case "banhammer": 
-						if (player.getUsername().equalsIgnoreCase("") || player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("reddragon")) {
+						if (player.getUsername().equalsIgnoreCase("Pked_divine") || player.getUsername().equalsIgnoreCase("99max99") || player.getUsername().equalsIgnoreCase("reddragon")) {
 					String username = cmd[1].substring(cmd[1].indexOf(" ") + 1);
 					Player other = World.getPlayerByDisplayName(username);
 					if (other == null)

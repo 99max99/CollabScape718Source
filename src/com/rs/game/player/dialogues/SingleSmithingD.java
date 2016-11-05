@@ -6,7 +6,6 @@ import com.rs.game.player.actions.Smelting;
 import com.rs.game.player.actions.Smelting.SmeltingBar;
 import com.rs.game.player.content.SkillsDialogue;
 import com.rs.game.player.content.SkillsDialogue.ItemNameFilter;
-import com.rs.game.player.dialogues.Dialogue;
 
 public class SingleSmithingD extends Dialogue {
 

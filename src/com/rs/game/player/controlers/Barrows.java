@@ -12,7 +12,6 @@ import com.rs.game.World;
 import com.rs.game.WorldObject;
 import com.rs.game.WorldTile;
 import com.rs.game.item.Item;
-import com.rs.game.npc.NPC;
 import com.rs.game.npc.others.BarrowsBrother;
 import com.rs.game.player.Player;
 import com.rs.game.player.Skills;

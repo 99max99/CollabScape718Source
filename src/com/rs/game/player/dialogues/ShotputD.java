@@ -3,7 +3,6 @@ package com.rs.game.player.dialogues;
 import com.rs.game.Animation;
 import com.rs.game.minigames.WarriorsGuild;
 import com.rs.game.player.controlers.Controler;
-import com.rs.game.player.dialogues.Dialogue;
 import com.rs.game.tasks.WorldTask;
 import com.rs.game.tasks.WorldTasksManager;
 

@@ -1,8 +1,6 @@
 package com.rs.game.player.dialogues;
 
 import com.rs.game.WorldTile;
-import com.rs.game.item.Item;
-import com.rs.game.player.Equipment;
 
 
 public class SmokeDungeonEntrance extends Dialogue {

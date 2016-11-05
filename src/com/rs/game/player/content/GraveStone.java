@@ -1,10 +1,9 @@
 package com.rs.game.player.content;
 
+import com.rs.game.World;
 import com.rs.game.WorldObject;
 import com.rs.game.WorldTile;
 import com.rs.game.player.Player;
-import com.rs.net.decoders.handlers.ObjectHandler;
-import com.rs.game.World;
 
 public class GraveStone {
 

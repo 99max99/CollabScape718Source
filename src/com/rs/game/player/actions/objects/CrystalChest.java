@@ -1,11 +1,9 @@
 package com.rs.game.player.actions.objects;
 
-import com.rs.game.Animation;
-import com.rs.game.Graphics;
+import com.rs.cache.loaders.ItemDefinitions;
 import com.rs.game.WorldObject;
 import com.rs.game.player.Player;
 import com.rs.utils.Utils;
-import com.rs.cache.loaders.ItemDefinitions;
 
 
 public class CrystalChest {

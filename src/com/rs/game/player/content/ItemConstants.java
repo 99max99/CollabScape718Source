@@ -2,10 +2,9 @@ package com.rs.game.player.content;
 
 import com.rs.cache.loaders.ItemDefinitions;
 import com.rs.game.item.Item;
+import com.rs.game.minigames.WarriorsGuild;
 import com.rs.game.player.Player;
 import com.rs.game.player.QuestManager.Quests;
-import com.rs.game.player.content.ItemConstants;
-import com.rs.game.minigames.WarriorsGuild;
 
 public class ItemConstants {
 	

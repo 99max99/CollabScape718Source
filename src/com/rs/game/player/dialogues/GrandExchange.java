@@ -2,7 +2,6 @@ package com.rs.game.player.dialogues;
 
 import com.rs.cache.loaders.NPCDefinitions;
 import com.rs.game.player.LendingManager;
-import com.rs.game.player.Skills;
 import com.rs.game.player.content.ItemSets;
 
 public class GrandExchange extends Dialogue {

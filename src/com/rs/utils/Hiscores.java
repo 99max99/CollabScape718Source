@@ -6,8 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.rs.game.player.Skills;
 import com.rs.game.player.Player;
+import com.rs.game.player.Skills;
 
 public class Hiscores {
 

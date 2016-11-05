@@ -1,5 +1,7 @@
 package com.rs.game.player.content;
 
+import java.util.TimerTask;
+
 import com.rs.cores.CoresManager;
 import com.rs.game.Animation;
 import com.rs.game.World;
@@ -7,8 +9,6 @@ import com.rs.game.WorldObject;
 import com.rs.game.item.Item;
 import com.rs.game.player.Player;
 import com.rs.utils.Utils;
-
-import java.util.TimerTask;
 
 /**
  * Picking up things that are stackable and pickable.

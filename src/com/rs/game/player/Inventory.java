@@ -3,7 +3,6 @@ package com.rs.game.player;
 import java.io.Serializable;
 import java.util.List;
 
-import com.rs.cache.loaders.ItemDefinitions;
 import com.rs.game.World;
 import com.rs.game.WorldTile;
 import com.rs.game.item.Item;

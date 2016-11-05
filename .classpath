@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="com/rs/tools/" kind="src" path="src"/>
+	<classpathentry kind="lib" path="data/libs/FileStore.jar"/>
+	<classpathentry kind="lib" path="data/libs/mysql-connector-java-5.1.18-bin.jar"/>
+	<classpathentry kind="lib" path="data/libs/netty-3.6.6.Final.jar"/>
+	<classpathentry kind="lib" path="data/libs/netty-3.9.0.Final.jar"/>
+	<classpathentry kind="lib" path="data/libs/RuneTopListV2.1.jar"/>
+	<classpathentry kind="lib" path="NPC Editor.jar"/>
+	<classpathentry kind="lib" path="tools/Cache Packer/Cache_Packer.jar"/>
+	<classpathentry kind="lib" path="tools/Interface Editor/Editor.jar"/>
+	<classpathentry kind="lib" path="tools/JARMaker/JARMaker.jar"/>
+	<classpathentry kind="lib" path="tools/JARMaker/lib/common.jar"/>
+	<classpathentry kind="lib" path="tools/JARMaker/lib/layout.jar"/>
+	<classpathentry kind="lib" path="tools/JARMaker/lib/pgs.jar"/>
+	<classpathentry kind="lib" path="tools/Maptool/lib/xpp3-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="tools/Maptool/lib/xstream-1.4.1.jar"/>
+	<classpathentry kind="lib" path="tools/Sprite Editor/bin/Z-FileSearcher.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="data/bin"/>
+</classpath>

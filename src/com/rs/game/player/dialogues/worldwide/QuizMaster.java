@@ -1,10 +1,9 @@
 package com.rs.game.player.dialogues.worldwide;
 
 import com.rs.cache.loaders.NPCDefinitions;
+import com.rs.game.WorldTile;
 import com.rs.game.player.content.magic.Magic;
 import com.rs.game.player.dialogues.Dialogue;
-import com.rs.game.player.Player;
-import com.rs.game.WorldTile;
 
 /**
  * Handles QuizMaster Game.

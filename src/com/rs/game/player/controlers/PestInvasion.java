@@ -12,6 +12,8 @@ import com.rs.game.World;
 import com.rs.game.WorldObject;
 import com.rs.game.WorldTile;
 import com.rs.game.item.Item;
+import com.rs.game.npc.pestinvasion.PestInvasionNpcs;
+import com.rs.game.npc.pestinvasion.PestQueen;
 import com.rs.game.player.Player;
 import com.rs.game.player.actions.Summoning;
 import com.rs.game.player.content.pet.Pets;
@@ -19,7 +21,6 @@ import com.rs.game.tasks.WorldTask;
 import com.rs.game.tasks.WorldTasksManager;
 import com.rs.utils.Logger;
 import com.rs.utils.Utils;
-import com.rs.game.npc.pestinvasion.*;
 
 public class PestInvasion extends Controler {
 

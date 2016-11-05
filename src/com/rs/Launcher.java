@@ -47,31 +47,31 @@ import com.rs.utils.NPCSpawns;
 import com.rs.utils.ObjectSpawning;
 import com.rs.utils.ObjectSpawns;
 import com.rs.utils.PkRank;
-import com.rs.utils.RewardHandler;
+//import com.rs.utils.RewardHandler;
 import com.rs.utils.SerializableFilesManager;
 import com.rs.utils.ShopsHandler;
 import com.rs.utils.Utils;
 import com.rs.utils.huffman.Huffman;
-import com.rspserver.motivote.Motivote;
+//import com.rspserver.motivote.Motivote;
 
 public final class Launcher {
 
 	public static void main(String[] args) throws Exception {
 		long currentTime = Utils.currentTimeMillis();
-		Logger.log("Exylum", "Reading Cache Intake...");
+		Logger.log("MaxScape", "Reading Cache Intake...");
 		Cache.init();
 		/*
 		 * Database
 		 */
-		//Logger.log("Exylum", "Preparing MYSQL Database...");
+		//Logger.log("MaxScape", "Preparing MYSQL Database...");
 		//World.database().connect();
 		KillStreakRank.init();
 		GrandExchange.init();
 		ItemSpawns.init();
 		Huffman.init();
-		Logger.log("Exylum", "Loaded Cache...");
-		Logger.log("Exylum", "Loading Data...");
-		new Motivote(new RewardHandler(), "http://www.Exylum.org/vote/", "66df0b2b").start();
+		Logger.log("MaxScape", "Loaded Cache...");
+		Logger.log("MaxScape", "Loading Data...");
+		//new Motivote(new RewardHandler(), "", "66df0b2b").start();//
 		World.loadWell(); // remove this if server doesnt start properly
 		WorldList.init();
 		Censor.init();
@@ -92,28 +92,28 @@ public final class Launcher {
 		BotanyBay.init();
 		ShopsHandler.init();
 		NPCExamines.init();
-		Logger.log("Exylum", "Loading Global Spawns...");
+		Logger.log("MaxScape", "Loading Global Spawns...");
 		NPCSpawning.spawnNPCS();
 		ObjectSpawning.spawnNPCS();
 		FishingSpotsHandler.init();
-		Logger.log("Exylum", "Loading Combat Scripts...");
+		Logger.log("MaxScape", "Loading Combat Scripts...");
 		CombatScriptsHandler.init();
 		Logger.log("Launcher", "Initing Clans Manager...");
 		ClansManager.init();
 		Logger.log("Launcher", "Initing Lent Items...");
 		LendingManager.init();
-		Logger.log("Exylum", "Reading Local Handlers...");
-		Logger.log("Exylum", "Reading Local Controlers...");
-		Logger.log("Exylum", "Reading Local Managers...");
+		Logger.log("MaxScape", "Reading Local Handlers...");
+		Logger.log("MaxScape", "Reading Local Controlers...");
+		Logger.log("MaxScape", "Reading Local Managers...");
 		/*
 		 * Game Engine
 		 */
-		Logger.log("Exylum", "Preparing Game Engine...");
+		Logger.log("MaxScape", "Preparing Game Engine...");
 		//GameEngine.get().init();
 		/*
 		 * Grand Exchange
 		 */
-		Logger.log("Exylum", "Preparing Grand Exchange...");
+		Logger.log("MaxScape", "Preparing Grand Exchange...");
 		//tradeAbleItems.initialize();
 		//GrandExchangePriceLoader.initialize();
 		//Offers.load();
@@ -124,20 +124,20 @@ public final class Launcher {
 		Startup();
 		Logger.log("Launcher", "Initing Control Panel...");
 		CoresManager.init();
-		Logger.log("Exylum", "Loading World...");
+		Logger.log("MaxScape", "Loading World...");
 		World.init();
-		Logger.log("Exylum", "Loading Region Builder...");
+		Logger.log("MaxScape", "Loading Region Builder...");
 		RegionBuilder.init();
 		try {
 			ServerChannelHandler.init();
 		} catch (Throwable e) {
 			Logger.handle(e);
-			Logger.log("Exylum",
+			Logger.log("MaxScape",
 					"Failed initing Server Channel Handler. Shutting down...");
 			System.exit(1);
 			return;
 		}
-		Logger.log("Exylum", "Server took "
+		Logger.log("MaxScape", "Server took "
 				+ (Utils.currentTimeMillis() - currentTime)
 				+ " milliseconds to launch.");
 		addAccountsSavingTask();
@@ -147,7 +147,7 @@ public final class Launcher {
 		//HalloweenEvent.startEvent();
 		addrecalcPricesTask();
 		//World.spawnObject(new WorldObject(87309, 10, 3122, 3225, 0, 0));
-		Logger.log("World", "Exylum is now Online!");
+		Logger.log("World", "MaxScape is now Online!");
 	}
 	
     private static void addrecalcPricesTask() {

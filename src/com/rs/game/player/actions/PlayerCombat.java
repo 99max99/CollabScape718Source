@@ -3,7 +3,7 @@ package com.rs.game.player.actions;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import com.rs.utils.Utils;
+
 import com.rs.cache.loaders.ItemDefinitions;
 import com.rs.game.Animation;
 import com.rs.game.Entity;
@@ -19,6 +19,7 @@ import com.rs.game.npc.familiar.Familiar;
 import com.rs.game.npc.familiar.Steeltitan;
 import com.rs.game.npc.fightkiln.HarAken;
 import com.rs.game.npc.fightkiln.HarAkenTentacle;
+import com.rs.game.npc.glacor.Glacyte;
 import com.rs.game.npc.godwars.zaros.NexMinion;
 import com.rs.game.npc.pest.PestPortal;
 import com.rs.game.npc.qbd.QueenBlackDragon;
@@ -32,7 +33,6 @@ import com.rs.game.tasks.WorldTask;
 import com.rs.game.tasks.WorldTasksManager;
 import com.rs.utils.MapAreas;
 import com.rs.utils.Utils;
-import com.rs.game.npc.glacor.Glacyte;
 
 public class PlayerCombat extends Action {
 

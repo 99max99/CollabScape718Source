@@ -9,7 +9,6 @@ import com.rs.game.World;
 import com.rs.game.player.Player;
 import com.rs.game.tasks.WorldTask;
 import com.rs.game.tasks.WorldTasksManager;
-import com.rs.game.player.PublicChatMessage;
 
 public class Dicing {
 	

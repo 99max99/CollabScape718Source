@@ -9,7 +9,6 @@ import com.rs.game.World;
 import com.rs.game.player.content.FriendChatsManager;
 import com.rs.net.decoders.WorldPacketsDecoder;
 import com.rs.utils.Utils;
-import com.rs.game.player.ChatMessage;
 
 
 public class FriendsIgnores implements Serializable {

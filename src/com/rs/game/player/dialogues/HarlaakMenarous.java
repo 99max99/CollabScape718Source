@@ -1,7 +1,5 @@
 package com.rs.game.player.dialogues;
 
-import com.rs.game.player.dialogues.Dialogue;
-
 public class HarlaakMenarous extends Dialogue {
 
     private int npcId = 8267;

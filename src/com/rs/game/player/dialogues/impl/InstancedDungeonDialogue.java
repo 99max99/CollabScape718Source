@@ -1,10 +1,6 @@
 package com.rs.game.player.dialogues.impl;
 
 
-import java.text.NumberFormat;
-import java.util.Locale;
-
-import com.rs.Settings;
 import com.rs.game.World;
 import com.rs.game.WorldTile;
 import com.rs.game.player.Player;

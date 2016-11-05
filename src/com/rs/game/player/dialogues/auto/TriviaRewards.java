@@ -1,7 +1,5 @@
 package com.rs.game.player.dialogues.auto;
 
-import com.rs.game.World;
-import com.rs.game.player.Player;
 import com.rs.game.player.dialogues.Dialogue;
 
 /**

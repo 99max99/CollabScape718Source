@@ -4,9 +4,9 @@ import java.io.Serializable;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
+import com.rs.Settings;
 import com.rs.game.World;
 import com.rs.game.player.dialogues.worldwide.LevelUp;
-import com.rs.Settings;
 
 
 

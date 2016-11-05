@@ -1,8 +1,5 @@
 package com.rs.game.player.dialogues;
 
-import com.rs.game.player.dialogues.Dialogue;
-import com.rs.utils.ShopsHandler;
-
 public class DeathTaskMaster extends Dialogue {
 
     private int npcId;

@@ -4,8 +4,6 @@ package com.rs.game.player.controlers;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
-
-
 import com.rs.cores.CoresManager;
 import com.rs.game.Animation;
 import com.rs.game.EntityList;
@@ -15,7 +13,6 @@ import com.rs.game.npc.NPC;
 import com.rs.game.player.Player;
 import com.rs.game.player.Skills;
 import com.rs.game.player.content.FadingScreen;
-import com.rs.game.player.controlers.Controler;
 import com.rs.game.tasks.WorldTask;
 import com.rs.game.tasks.WorldTasksManager;
 import com.rs.utils.ChatColors;

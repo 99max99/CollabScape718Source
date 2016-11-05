@@ -4,10 +4,10 @@ import java.io.Serializable;
 
 import com.rs.game.Animation;
 import com.rs.game.Hit;
+import com.rs.game.Hit.HitLook;
 import com.rs.game.World;
 import com.rs.game.WorldObject;
 import com.rs.game.WorldTile;
-import com.rs.game.Hit.HitLook;
 import com.rs.game.item.Item;
 import com.rs.game.npc.NPC;
 import com.rs.game.player.Player;

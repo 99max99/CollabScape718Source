@@ -1,8 +1,6 @@
 package com.rs.game.player.dialogues.alkharid;
 
 import com.rs.game.WorldTile;
-import com.rs.game.item.Item;
-import com.rs.game.player.Equipment;
 import com.rs.game.player.dialogues.Dialogue;
 
 

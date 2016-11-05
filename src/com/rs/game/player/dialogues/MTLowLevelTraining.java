@@ -1,8 +1,6 @@
 package com.rs.game.player.dialogues;
 
-import com.rs.game.Animation;
 import com.rs.game.WorldTile;
-import com.rs.game.player.Skills;
 import com.rs.game.player.content.magic.Magic;
 
 public class MTLowLevelTraining extends Dialogue {

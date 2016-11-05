@@ -6,7 +6,6 @@ import com.rs.game.Graphics;
 import com.rs.game.player.Player;
 import com.rs.game.player.Skills;
 import com.rs.game.player.actions.crafting.Enchanting;
-import com.rs.utils.EconomyPrices;
 
 
 public class MagicOnItem {

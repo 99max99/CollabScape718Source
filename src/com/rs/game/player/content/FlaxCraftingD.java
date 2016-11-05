@@ -2,9 +2,6 @@ package com.rs.game.player.content;
 
 import com.rs.game.player.actions.FlaxCrafting;
 import com.rs.game.player.actions.FlaxCrafting.Orb;
-import com.rs.game.player.Player;
-import com.rs.game.item.Item;
-import com.rs.game.player.content.SkillsDialogue;
 import com.rs.game.player.dialogues.Dialogue;
 
 public class FlaxCraftingD extends Dialogue {

@@ -1,7 +1,5 @@
 package com.rs.game.player.dialogues;
 
-//import com.rs.game.minigames.ectofuntus.Ectofuntus;
-import com.rs.game.player.dialogues.Dialogue;
 import com.rs.utils.ShopsHandler;
 
 public class GhostDisciple extends Dialogue {

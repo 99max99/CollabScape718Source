@@ -1,8 +1,8 @@
 package com.rs.game.player.dialogues.item;
 
-import com.rs.game.player.dialogues.Dialogue;
 import com.rs.game.player.LendingManager;
 import com.rs.game.player.content.Lend;
+import com.rs.game.player.dialogues.Dialogue;
 
 public class LendReturn extends Dialogue {
 

@@ -1,17 +1,14 @@
 package com.rs.game.npc.combat.impl;
 
-import com.rs.game.task.impl.WorldTask;
-import com.rs.game.tasks.WorldTasksManager;
-import com.rs.game.World;
 import com.rs.game.Animation;
 import com.rs.game.Entity;
 import com.rs.game.ForceTalk;
 import com.rs.game.Graphics;
+import com.rs.game.World;
 import com.rs.game.npc.NPC;
 import com.rs.game.npc.combat.CombatScript;
 import com.rs.game.npc.combat.NPCCombatDefinitions;
 import com.rs.game.player.Player;
-import com.rs.game.player.Skills;
 import com.rs.utils.Utils;;
 
 public class DreadnautCombat extends CombatScript {

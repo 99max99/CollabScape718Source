@@ -1,14 +1,13 @@
 package com.rs.game.npc.familiar;
 
-import com.rs.game.WorldTile;
-import com.rs.game.player.Player;
-import com.rs.game.player.actions.Summoning.Pouches;
 import com.rs.game.Animation;
 import com.rs.game.Entity;
 import com.rs.game.Graphics;
 import com.rs.game.World;
+import com.rs.game.WorldTile;
 import com.rs.game.item.Item;
-import com.rs.game.npc.familiar.Familiar;
+import com.rs.game.player.Player;
+import com.rs.game.player.actions.Summoning.Pouches;
 import com.rs.game.player.content.Foods.Food;
 import com.rs.game.tasks.WorldTask;
 import com.rs.game.tasks.WorldTasksManager;

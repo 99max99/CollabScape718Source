@@ -12,12 +12,12 @@ import com.rs.cores.CoresManager;
 import com.rs.game.item.FloorItem;
 import com.rs.game.player.Player;
 import com.rs.io.InputStream;
+import com.rs.utils.ItemSpawns;
 import com.rs.utils.Logger;
 import com.rs.utils.MapArchiveKeys;
 import com.rs.utils.NPCSpawns;
 import com.rs.utils.ObjectSpawns;
 import com.rs.utils.Utils;
-import com.rs.utils.ItemSpawns;
 
 public class Region {
     public static final int[] OBJECT_SLOTS = new int[] { 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3 };

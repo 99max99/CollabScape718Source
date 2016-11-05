@@ -6,7 +6,6 @@ import java.util.ArrayList;
 
 import com.rs.game.player.Player;
 import com.rs.game.player.content.FriendChatsManager;
-import com.rs.game.player.content.Highscores;
 
 
 public final class DisplayNames {

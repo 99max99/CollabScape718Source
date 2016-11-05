@@ -1,7 +1,6 @@
 package com.rs.game.player.dialogues.item;
 
 import com.rs.cache.loaders.ItemDefinitions;
-import com.rs.cores.CoresManager;
 import com.rs.game.player.Player;
 import com.rs.game.player.actions.Action;
 import com.rs.game.player.content.SkillsDialogue;

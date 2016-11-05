@@ -5,11 +5,9 @@ import com.rs.game.WorldObject;
 import com.rs.game.WorldTile;
 import com.rs.game.item.Item;
 import com.rs.game.npc.NPC;
-import com.rs.game.player.CoordsEvent;
 import com.rs.game.player.Player;
 import com.rs.game.player.content.Foods.Food;
 import com.rs.game.player.content.Pots.Pot;
-import com.rs.utils.Utils;
 
 public abstract class Controler {
 

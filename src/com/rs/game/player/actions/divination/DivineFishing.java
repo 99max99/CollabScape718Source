@@ -3,7 +3,6 @@ package com.rs.game.player.actions.divination;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.rs.cache.loaders.ItemDefinitions;
 import com.rs.game.Animation;
 import com.rs.game.World;
 import com.rs.game.WorldObject;

@@ -1,8 +1,5 @@
 package com.rs.game.player.controlers.undergroundpass;
 
-import java.io.Serializable;
-import java.util.Iterator;
-
 import com.rs.game.WorldTile;
 
 public class UndergroundPass {

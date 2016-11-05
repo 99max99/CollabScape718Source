@@ -1,14 +1,10 @@
 package com.rs.game.player;
 
+import java.text.DecimalFormat;
 import java.util.concurrent.ConcurrentHashMap;
 
-import com.rs.Settings;
 import com.rs.game.item.Item;
-import com.rs.game.player.content.NewsOptions;
-import com.rs.utils.Utils;
 import com.rs.game.player.content.clans.ClansManager;
-import java.text.*;
-import java.math.*;
 
 @SuppressWarnings("unused")
 public class InterfaceManager {

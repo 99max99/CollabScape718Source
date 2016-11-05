@@ -1,9 +1,5 @@
 package com.rs.game.player.dialogues.alkharid;
 
-import com.rs.cache.loaders.NPCDefinitions;
-import com.rs.game.WorldTile;
-import com.rs.game.player.content.magic.Magic;
-import com.rs.game.player.content.PartyRoom;
 import com.rs.game.player.dialogues.Dialogue;
 
 public class ShantayWarning extends Dialogue {

@@ -1,23 +1,9 @@
 package com.rs.game.player.controlers;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.rs.Settings;
 import com.rs.game.Entity;
 import com.rs.game.ForceTalk;
-import com.rs.game.Hit;
-import com.rs.game.Hit.HitLook;
-import com.rs.game.World;
-import com.rs.game.WorldObject;
 import com.rs.game.WorldTile;
-import com.rs.game.item.Item;
-import com.rs.game.npc.NPC;
 import com.rs.game.npc.others.DreadnautBoss;
-import com.rs.game.player.Player;
-import com.rs.game.player.Skills;
-import com.rs.game.tasks.WorldTask;
-import com.rs.game.tasks.WorldTasksManager;
 import com.rs.utils.Utils;
 
 public final class DreadnautControler extends Controler {

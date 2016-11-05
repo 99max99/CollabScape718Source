@@ -1,6 +1,6 @@
 package com.rs.game.task.impl;
 
-import com.rs.Launcher;
+import com.alex.store.Index;
 import com.rs.Settings;
 import com.rs.cache.Cache;
 import com.rs.cache.loaders.ItemDefinitions;
@@ -8,10 +8,7 @@ import com.rs.cache.loaders.NPCDefinitions;
 import com.rs.cache.loaders.ObjectDefinitions;
 import com.rs.game.GameEngine;
 import com.rs.game.task.Task;
-import com.rs.game.World;
-import com.rs.game.Region;
 import com.rs.utils.Logger;
-import com.alex.store.Index;
 
 public class CleanUpTask extends Task {
 

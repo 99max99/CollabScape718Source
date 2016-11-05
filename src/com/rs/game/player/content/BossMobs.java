@@ -6,7 +6,6 @@ import com.rs.cores.CoresManager;
 import com.rs.game.World;
 import com.rs.game.WorldTile;
 import com.rs.game.npc.NPC;
-import com.rs.game.player.Player;
 import com.rs.utils.Logger;
 
 public class BossMobs {

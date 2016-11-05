@@ -16,6 +16,7 @@ import com.rs.game.ForceTalk;
 import com.rs.game.Graphics;
 import com.rs.game.Hit;
 import com.rs.game.Hit.HitLook;
+import com.rs.game.SecondaryBar;
 import com.rs.game.World;
 import com.rs.game.WorldTile;
 import com.rs.game.item.Item;
@@ -25,6 +26,7 @@ import com.rs.game.npc.combat.NPCCombatDefinitions;
 import com.rs.game.npc.familiar.Familiar;
 import com.rs.game.player.Player;
 import com.rs.game.player.Skills;
+import com.rs.game.player.SlayerManager;
 import com.rs.game.player.actions.HerbCleaning;
 import com.rs.game.player.content.Assassins;
 import com.rs.game.player.content.Burying;
@@ -45,8 +47,6 @@ import com.rs.utils.NPCBonuses;
 import com.rs.utils.NPCCombatDefinitionsL;
 import com.rs.utils.NPCDrops;
 import com.rs.utils.Utils;
-import com.rs.game.player.SlayerManager;
-import com.rs.game.SecondaryBar;
 
 public class NPC extends Entity implements Serializable {
 

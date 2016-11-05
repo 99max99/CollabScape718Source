@@ -4,8 +4,6 @@ import org.jboss.netty.channel.ChannelFuture;
 import org.jboss.netty.channel.ChannelFutureListener;
 
 import com.rs.Settings;
-import com.rs.cache.loaders.ObjectDefinitions;
-import com.rs.game.player.content.Highscores;
 import com.rs.game.Animation;
 import com.rs.game.DynamicRegion;
 import com.rs.game.Entity;
@@ -18,10 +16,14 @@ import com.rs.game.item.FloorItem;
 import com.rs.game.item.Item;
 import com.rs.game.item.ItemsContainer;
 import com.rs.game.npc.NPC;
+import com.rs.game.player.ChatMessage;
 import com.rs.game.player.HintIcon;
 import com.rs.game.player.Player;
+import com.rs.game.player.PublicChatMessage;
 import com.rs.game.player.QuickChatMessage;
 import com.rs.game.player.content.FriendChatsManager;
+import com.rs.game.player.content.clans.ClansManager;
+import com.rs.game.player.content.grandExchange.Offer;
 import com.rs.game.worldlist.WorldList;
 import com.rs.io.OutputStream;
 import com.rs.net.Session;
@@ -29,10 +31,6 @@ import com.rs.utils.Logger;
 import com.rs.utils.MapArchiveKeys;
 import com.rs.utils.Utils;
 import com.rs.utils.huffman.Huffman;
-import com.rs.game.player.ChatMessage;
-import com.rs.game.player.content.clans.ClansManager;
-import com.rs.game.player.PublicChatMessage;
-import com.rs.game.player.content.grandExchange.Offer;
 
 public class WorldPacketsEncoder extends Encoder {
 

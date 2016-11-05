@@ -5,7 +5,6 @@ import java.io.Serializable;
 import com.rs.Settings;
 import com.rs.cache.loaders.ItemDefinitions;
 import com.rs.game.item.Item;
-import com.rs.game.item.ItemsContainer;
 import com.rs.game.npc.familiar.Familiar;
 import com.rs.utils.ItemExamines;
 import com.rs.utils.Utils;

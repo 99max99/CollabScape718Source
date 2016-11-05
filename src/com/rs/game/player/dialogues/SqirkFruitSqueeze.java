@@ -2,7 +2,6 @@ package com.rs.game.player.dialogues;
 
 import com.rs.game.player.Skills;
 import com.rs.game.player.actions.Herblore;
-import com.rs.game.player.dialogues.Dialogue;
 
 public class SqirkFruitSqueeze extends Dialogue {
 

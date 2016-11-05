@@ -1,12 +1,10 @@
 package com.rs.game.player.dialogues.item;
 
-import com.rs.game.player.content.LavaFlowMines;
-import com.rs.Settings;
 import com.rs.game.WorldTile;
 import com.rs.game.minigames.rfd.RecipeforDisaster;
 import com.rs.game.player.Skills;
+import com.rs.game.player.content.LavaFlowMines;
 import com.rs.game.player.content.magic.Magic;
-import com.rs.game.player.controlers.*;
 import com.rs.game.player.controlers.dung.RuneDungGame;
 import com.rs.game.player.dialogues.Dialogue;
 import com.rs.utils.ShopsHandler;

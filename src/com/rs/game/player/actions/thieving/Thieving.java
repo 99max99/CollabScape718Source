@@ -2,9 +2,6 @@ package com.rs.game.player.actions.thieving;
 
 import java.util.List;
 
-import com.rs.event.Event;
-import com.rs.event.EventContainer;
-import com.rs.event.EventManager;
 import com.rs.game.Animation;
 import com.rs.game.ForceTalk;
 import com.rs.game.World;
@@ -14,18 +11,9 @@ import com.rs.game.player.Equipment;
 import com.rs.game.player.Player;
 import com.rs.game.player.Skills;
 import com.rs.game.player.content.Skillers;
-import com.rs.game.player.controlers.CorpBeastControler;
-import com.rs.game.player.controlers.DTControler;
-import com.rs.game.player.controlers.GodWars;
-import com.rs.game.player.controlers.ZGDControler;
-import com.rs.game.player.controlers.castlewars.CastleWarsPlaying;
-import com.rs.game.player.controlers.castlewars.CastleWarsWaiting;
-import com.rs.game.player.controlers.darkinvasion.DarkInvasion;
-import com.rs.game.player.controlers.dung.RuneDungGame;
 import com.rs.game.tasks.WorldTask;
 import com.rs.game.tasks.WorldTasksManager;
 import com.rs.net.decoders.handlers.ObjectHandler;
-import com.rs.utils.Misc;
 import com.rs.utils.Utils;
 
 /**

@@ -1,13 +1,7 @@
 package com.rs.game.player.actions;
 
-import java.util.concurrent.TimeUnit;
-
 import com.rs.game.Animation;
-import com.rs.game.ForceTalk;
-import com.rs.game.item.Item;
-import com.rs.game.npc.Transformation;
 import com.rs.game.player.Player;
-import com.rs.game.npc.NPC;
 
 public class SheepShearing extends Action {
 

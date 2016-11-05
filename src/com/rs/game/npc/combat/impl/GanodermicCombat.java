@@ -2,17 +2,13 @@ package com.rs.game.npc.combat.impl;
 
 import com.rs.game.Animation;
 import com.rs.game.Entity;
-import com.rs.game.ForceTalk;
 import com.rs.game.Graphics;
-import com.rs.game.Hit;
-import com.rs.game.Hit.HitLook;
 import com.rs.game.World;
 import com.rs.game.npc.NPC;
-import com.rs.game.npc.slayer.GanodermicBeast;
 import com.rs.game.npc.combat.CombatScript;
 import com.rs.game.npc.combat.NPCCombatDefinitions;
+import com.rs.game.npc.slayer.GanodermicBeast;
 import com.rs.game.player.Player;
-import com.rs.utils.Utils;
 
 
 

@@ -1,9 +1,6 @@
 package com.rs.game.player.dialogues.worldwide;
 
 import com.rs.cache.loaders.NPCDefinitions;
-import com.rs.game.World;
-import com.rs.game.WorldTile;
-import com.rs.game.player.content.magic.Magic;
 import com.rs.game.player.dialogues.Dialogue;
 
 public class StarSprite extends Dialogue {

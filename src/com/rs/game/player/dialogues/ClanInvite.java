@@ -2,7 +2,6 @@ package com.rs.game.player.dialogues;
 
 import com.rs.game.player.Player;
 import com.rs.game.player.content.clans.ClansManager;
-import com.rs.game.player.dialogues.Dialogue;
 
 public class ClanInvite extends Dialogue {
 

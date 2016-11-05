@@ -1,7 +1,5 @@
 package com.rs.game.player;
 
-import com.rs.game.player.ChatMessage;
-
 public class PublicChatMessage extends ChatMessage {
 
     private int effects;

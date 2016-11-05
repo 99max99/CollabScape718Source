@@ -7,7 +7,6 @@ import com.rs.game.Graphics;
 import com.rs.game.player.Player;
 import com.rs.game.player.Skills;
 import com.rs.game.player.content.magic.Magic;
-import com.rs.utils.Utils;
 
 
 public class Enchanting {

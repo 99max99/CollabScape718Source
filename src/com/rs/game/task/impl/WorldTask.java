@@ -1,10 +1,9 @@
 package com.rs.game.task.impl;
 
-import com.rs.Launcher;
-import com.rs.game.task.Task;
+import com.rs.game.World;
 import com.rs.game.npc.NPC;
 import com.rs.game.player.Player;
-import com.rs.game.World;
+import com.rs.game.task.Task;
 import com.rs.utils.Logger;
 
 public class WorldTask extends Task {

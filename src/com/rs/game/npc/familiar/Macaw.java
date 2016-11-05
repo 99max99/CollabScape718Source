@@ -8,9 +8,9 @@ import com.rs.game.item.Item;
 import com.rs.game.player.Player;
 import com.rs.game.player.actions.HerbCleaning.Herbs;
 import com.rs.game.player.actions.Summoning.Pouches;
-import com.rs.utils.Utils;
 import com.rs.game.tasks.WorldTask;
 import com.rs.game.tasks.WorldTasksManager;
+import com.rs.utils.Utils;
 
 public class Macaw extends Familiar {
 

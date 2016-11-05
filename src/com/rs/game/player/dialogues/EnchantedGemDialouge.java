@@ -1,6 +1,5 @@
 package com.rs.game.player.dialogues;
 
-import com.rs.game.player.dialogues.Dialogue;
 import com.rs.utils.Utils;
 
 public class EnchantedGemDialouge extends Dialogue {

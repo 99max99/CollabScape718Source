@@ -52,7 +52,7 @@ import com.rs.utils.SerializableFilesManager;
 import com.rs.utils.ShopsHandler;
 import com.rs.utils.Utils;
 import com.rs.utils.huffman.Huffman;
-import com.rspserver.motivote.Motivote;
+// import com.rspserver.motivote.Motivote;
 
 public final class Launcher {
 
@@ -71,7 +71,7 @@ public final class Launcher {
 		Huffman.init();
 		Logger.log("Exylum", "Loaded Cache...");
 		Logger.log("Exylum", "Loading Data...");
-		new Motivote(new RewardHandler(), "http://www.Exylum.org/vote/", "66df0b2b").start();
+// 		new Motivote(new RewardHandler(), "http://www.Exylum.org/vote/", "66df0b2b").start();
 		World.loadWell(); // remove this if server doesnt start properly
 		WorldList.init();
 		Censor.init();

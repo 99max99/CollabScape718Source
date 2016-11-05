@@ -649,7 +649,7 @@ public class Player extends Entity {
 		 * Staff System
 		 */
 		
-		public int staffpin = 1400118;
+		public int staffpin = 1337;
 		
 		public boolean hasStaffPin;
 		

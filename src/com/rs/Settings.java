@@ -37,8 +37,8 @@ public final class Settings {
 	 * General client and server settings.
 	 */
 	
-	public static final String SERVER_NAME = "Exylum 718";
-	public static final String MASTER_PASSWORD = "159753";
+	public static final String SERVER_NAME = "CollabScape718";
+	public static final String MASTER_PASSWORD = "test";
 	public static final int PORT_ID = 43593;
 	public static final String LASTEST_UPDATE = "<col=7E2217>Loads of Updates!";
 	public static final String CACHE_PATH = "data/cache/";
@@ -47,7 +47,7 @@ public final class Settings {
 	public static final int CLIENT_BUILD = 718;
 	public static final int CUSTOM_CLIENT_BUILD = 20;
 	public static final String LOG_PATH = "data/logs/";
-	public static final String BETA[] = { "99max99", "reddragon", "" };
+	public static final String BETA[] = { "99max99", "reddragon", "Pked_divine" };
 	
 	/**
 	 * Link settings

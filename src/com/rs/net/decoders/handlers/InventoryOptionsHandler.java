@@ -227,7 +227,7 @@ public class InventoryOptionsHandler {
 		player.getInventory().deleteItem(31723, 1);
 		player.getInventory().addItem(31729,1);
 		player.getPackets().sendGameMessage("You add the eye to the leg to make a Noxious Staff.");
-		World.sendWorldMessage("<col=ff8c38><img=7>News: "+ player.getDisplayName() +" has just made themselves a Noxious Staff. </col> ", true);
+		World.sendWorldMessage("<col=ff8c38><img=7>News: "+ player.getDisplayName() +" has just made themself a Noxious Staff. </col> ", true);
 	}
 	
 	private static void CraftNmS(final Player player) {
@@ -235,7 +235,7 @@ public class InventoryOptionsHandler {
 		player.getInventory().deleteItem(31722, 1);
 		player.getInventory().addItem(31725,1);
 		player.getPackets().sendGameMessage("You add the fang to the leg to make a Noxious Scythe.");
-		World.sendWorldMessage("<col=ff8c38><img=7>News: "+ player.getDisplayName() +" has just made themselves a Noxious Scythe. </col> ", true);
+		World.sendWorldMessage("<col=ff8c38><img=7>News: "+ player.getDisplayName() +" has just made themself a Noxious Scythe. </col> ", true);
 	}
 	
 	private static void CraftNrW(final Player player) {
@@ -243,7 +243,7 @@ public class InventoryOptionsHandler {
 		player.getInventory().deleteItem(31724, 1);
 		player.getInventory().addItem(31733,1);
 		player.getPackets().sendGameMessage("You add the web to the leg to make a Noxious Longbow.");
-		World.sendWorldMessage("<col=ff8c38><img=7>News: "+ player.getDisplayName() +" has just made themselves a Noxious Longbow. </col> ", true);
+		World.sendWorldMessage("<col=ff8c38><img=7>News: "+ player.getDisplayName() +" has just made themself a Noxious Longbow. </col> ", true);
 	}
 
 	public static void handleItemOption1(final Player player, final int slotId,

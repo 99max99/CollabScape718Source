@@ -47,7 +47,7 @@ public final class Settings {
 	public static final int CLIENT_BUILD = 718;
 	public static final int CUSTOM_CLIENT_BUILD = 20;
 	public static final String LOG_PATH = "data/logs/";
-	public static final String BETA[] = { "99max99", "reddragon", "Pked_divine", "" };
+	public static final String BETA[] = { "99max99", "reddragon", "Pked_divine" };
 	
 	/**
 	 * Link settings

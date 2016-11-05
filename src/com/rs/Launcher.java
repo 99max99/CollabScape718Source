@@ -58,20 +58,20 @@ public final class Launcher {
 
 	public static void main(String[] args) throws Exception {
 		long currentTime = Utils.currentTimeMillis();
-		Logger.log("MaxScape", "Reading Cache Intake...");
+		Logger.log("CollabScape718", "Reading Cache Intake...");
 		Cache.init();
 		/*
 		 * Database
 		 */
-		//Logger.log("MaxScape", "Preparing MYSQL Database...");
+		//Logger.log("CollabScape718", "Preparing MYSQL Database...");
 		//World.database().connect();
 		KillStreakRank.init();
 		GrandExchange.init();
 		ItemSpawns.init();
 		Huffman.init();
-		Logger.log("MaxScape", "Loaded Cache...");
-		Logger.log("MaxScape", "Loading Data...");
-		//new Motivote(new RewardHandler(), "", "66df0b2b").start();//
+		Logger.log("Exylum", "Loaded Cache...");
+		Logger.log("Exylum", "Loading Data...");
+// 		new Motivote(new RewardHandler(), "http://www.Exylum.org/vote/", "66df0b2b").start();
 		World.loadWell(); // remove this if server doesnt start properly
 		WorldList.init();
 		Censor.init();
@@ -92,28 +92,28 @@ public final class Launcher {
 		BotanyBay.init();
 		ShopsHandler.init();
 		NPCExamines.init();
-		Logger.log("MaxScape", "Loading Global Spawns...");
+		Logger.log("CollabScape718", "Loading Global Spawns...");
 		NPCSpawning.spawnNPCS();
 		ObjectSpawning.spawnNPCS();
 		FishingSpotsHandler.init();
-		Logger.log("MaxScape", "Loading Combat Scripts...");
+		Logger.log("CollabScape718", "Loading Combat Scripts...");
 		CombatScriptsHandler.init();
 		Logger.log("Launcher", "Initing Clans Manager...");
 		ClansManager.init();
 		Logger.log("Launcher", "Initing Lent Items...");
 		LendingManager.init();
-		Logger.log("MaxScape", "Reading Local Handlers...");
-		Logger.log("MaxScape", "Reading Local Controlers...");
-		Logger.log("MaxScape", "Reading Local Managers...");
+		Logger.log("CollabScape718", "Reading Local Handlers...");
+		Logger.log("CollabScape718", "Reading Local Controlers...");
+		Logger.log("CollabScape718", "Reading Local Managers...");
 		/*
 		 * Game Engine
 		 */
-		Logger.log("MaxScape", "Preparing Game Engine...");
+		Logger.log("CollabScape718", "Preparing Game Engine...");
 		//GameEngine.get().init();
 		/*
 		 * Grand Exchange
 		 */
-		Logger.log("MaxScape", "Preparing Grand Exchange...");
+		Logger.log("CollabScape718", "Preparing Grand Exchange...");
 		//tradeAbleItems.initialize();
 		//GrandExchangePriceLoader.initialize();
 		//Offers.load();
@@ -124,20 +124,20 @@ public final class Launcher {
 		Startup();
 		Logger.log("Launcher", "Initing Control Panel...");
 		CoresManager.init();
-		Logger.log("MaxScape", "Loading World...");
+		Logger.log("CollabScape718", "Loading World...");
 		World.init();
-		Logger.log("MaxScape", "Loading Region Builder...");
+		Logger.log("CollabScape718", "Loading Region Builder...");
 		RegionBuilder.init();
 		try {
 			ServerChannelHandler.init();
 		} catch (Throwable e) {
 			Logger.handle(e);
-			Logger.log("MaxScape",
+			Logger.log("CollabScape718",
 					"Failed initing Server Channel Handler. Shutting down...");
 			System.exit(1);
 			return;
 		}
-		Logger.log("MaxScape", "Server took "
+		Logger.log("CollabScape718", "Server took "
 				+ (Utils.currentTimeMillis() - currentTime)
 				+ " milliseconds to launch.");
 		addAccountsSavingTask();
@@ -147,7 +147,7 @@ public final class Launcher {
 		//HalloweenEvent.startEvent();
 		addrecalcPricesTask();
 		//World.spawnObject(new WorldObject(87309, 10, 3122, 3225, 0, 0));
-		Logger.log("World", "MaxScape is now Online!");
+		Logger.log("World", "CollabScape718 is now Online!");
 	}
 	
     private static void addrecalcPricesTask() {

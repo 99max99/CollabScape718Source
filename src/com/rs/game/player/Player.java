@@ -22,13 +22,23 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.TimeUnit;
 
+import com.rs.game.player.PlayerData;
+import com.rs.game.CustomisedShop;
+import com.rs.game.player.content.construction.*;
+import com.rs.game.player.content.farming.*;
+import com.rs.game.player.content.grandExchange.GrandExchange;
+import com.rs.game.player.content.SecuritySystem;
+
 import org.runetoplist.VoteChecker;
 
 import com.rs.Settings;
 import com.rs.cache.loaders.ObjectDefinitions;
+import com.rs.game.player.content.FairyRing;
+import com.rs.game.player.content.DwarfCannon;
 import com.rs.cores.CoresManager;
+import com.rs.game.player.actions.slayer.SlayerTask;
+import com.rs.game.player.content.botanybay.BotanyBay;
 import com.rs.game.Animation;
-import com.rs.game.CustomisedShop;
 import com.rs.game.Entity;
 import com.rs.game.ForceTalk;
 import com.rs.game.Graphics;
@@ -37,10 +47,10 @@ import com.rs.game.Hit.HitLook;
 import com.rs.game.World;
 import com.rs.game.WorldObject;
 import com.rs.game.WorldTile;
+import com.rs.game.player.content.grandExchange.Offer;
 import com.rs.game.item.FloorItem;
 import com.rs.game.item.Item;
 import com.rs.game.item.ItemsContainer;
-import com.rs.game.minigames.WarriorsGuild;
 import com.rs.game.minigames.clanwars.FfaZone;
 import com.rs.game.minigames.clanwars.WarControler;
 import com.rs.game.minigames.duel.DuelArena;
@@ -51,41 +61,28 @@ import com.rs.game.npc.godwars.zaros.Nex;
 import com.rs.game.npc.others.GraveStone;
 import com.rs.game.npc.pet.Pet;
 import com.rs.game.player.actions.PlayerCombat;
-import com.rs.game.player.actions.slayer.SlayerTask;
-import com.rs.game.player.content.Assassins;
-import com.rs.game.player.content.BankPin;
+import com.rs.game.player.actions.divination.DivinePlacing;
+import com.rs.game.player.content.Ectophial;
+import com.rs.game.player.ClueScrolls;
 import com.rs.game.player.content.CooperativeSlayer;
 import com.rs.game.player.content.Deaths;
-import com.rs.game.player.content.Deaths.Tasks;
-import com.rs.game.player.content.DwarfCannon;
-import com.rs.game.player.content.Ectophial;
-import com.rs.game.player.content.FairyRing;
 import com.rs.game.player.content.FriendChatsManager;
-import com.rs.game.player.content.Highscores;
-import com.rs.game.player.content.JoinInstance;
 import com.rs.game.player.content.LodeStone;
+import com.rs.game.player.content.magic.Magic;
+import com.rs.game.player.content.Assassins;
+import com.rs.game.player.content.BankPin;
 import com.rs.game.player.content.Notes;
 import com.rs.game.player.content.Notes.Note;
-import com.rs.game.player.content.PlayerLook;
+import com.rs.game.player.content.Highscores;
+import com.rs.game.player.content.JoinInstance;
 import com.rs.game.player.content.Pots;
 import com.rs.game.player.content.ReportAbuse;
 import com.rs.game.player.content.SandwichLady;
-import com.rs.game.player.content.SecuritySystem;
-import com.rs.game.player.content.ShootingStar;
 import com.rs.game.player.content.SkillCapeCustomizer;
 import com.rs.game.player.content.Skillers;
 import com.rs.game.player.content.Skillers.SkillerTasks;
 import com.rs.game.player.content.SquealOfFortune;
-import com.rs.game.player.content.botanybay.BotanyBay;
-import com.rs.game.player.content.clans.ClansManager;
-import com.rs.game.player.content.construction.House;
-import com.rs.game.player.content.construction.HouseLocation;
-import com.rs.game.player.content.construction.Room;
-import com.rs.game.player.content.construction.RoomReference;
-import com.rs.game.player.content.construction.ServantType;
-import com.rs.game.player.content.farming.Farmings;
-import com.rs.game.player.content.grandExchange.GrandExchange;
-import com.rs.game.player.content.magic.Magic;
+import com.rs.game.player.content.Deaths.Tasks;
 import com.rs.game.player.content.pet.PetManager;
 import com.rs.game.player.controlers.Controler;
 import com.rs.game.player.controlers.CorpBeastControler;
@@ -105,12 +102,14 @@ import com.rs.game.player.controlers.castlewars.CastleWarsWaiting;
 import com.rs.game.player.controlers.fightpits.FightPitsArena;
 import com.rs.game.player.controlers.pestcontrol.PestControlGame;
 import com.rs.game.player.controlers.pestcontrol.PestControlLobby;
+import com.rs.game.player.content.ShootingStar;
 import com.rs.game.tasks.WorldTask;
 import com.rs.game.tasks.WorldTasksManager;
 import com.rs.net.Session;
 import com.rs.net.decoders.WorldPacketsDecoder;
 import com.rs.net.decoders.handlers.ButtonHandler;
 import com.rs.net.encoders.WorldPacketsEncoder;
+import com.rs.utils.Hiscores;
 import com.rs.utils.IsaacKeyPair;
 import com.rs.utils.KillStreakRank;
 import com.rs.utils.Logger;
@@ -120,6 +119,15 @@ import com.rs.utils.PkRank;
 import com.rs.utils.SerializableFilesManager;
 import com.rs.utils.ShopsHandler;
 import com.rs.utils.Utils;
+import com.rs.game.player.Toolbelt;
+import com.rs.game.player.VarsManager;
+import com.rs.game.player.ChatMessage;
+import com.rs.game.player.QuickChatMessage;
+import com.rs.game.player.content.clans.ClansManager;
+import com.rs.game.player.GrandExchangeManager;
+import com.rs.game.minigames.WarriorsGuild;
+import com.rs.game.player.content.construction.House;
+import com.rs.game.player.content.PlayerLook;
 
 public class Player extends Entity {
 	//point shops
@@ -571,8 +579,9 @@ public class Player extends Entity {
 	public int KCwild = 0; // wildy wyrm
 	public int KCblink = 0;
 	public int KCThunder = 0; // Yk'lagor the thunderous
+	public int KCVorago = 0; // Vorago
 	
-	//Noszscape minigame
+	//CollabScape718 minigame
 	public int Nstage1 = 0;
 	public int Nstage2 = 0;
 	public int Nstage3 = 0;
@@ -748,7 +757,7 @@ public class Player extends Entity {
 		try{
 			username = username.replaceAll(" ","_");
 		    String secret = "4bbdcc0e821637155ac4217bdab70d2e"; //YOUR SECRET KEY!
-			String email = "noszscape@gmail.com"; //This is the one you use to login into RSPS-PAY
+			String email = "dylo957@gmail.com"; //This is the one you use to login into RSPS-PAY
 			URL url = new URL("http://rsps-pay.com/includes/listener.php?username="+username+"&secret="+secret+"&email="+email);
 			BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
 			String results = reader.readLine();
@@ -1350,6 +1359,19 @@ public class Player extends Entity {
 	
 	public int noob = 0;
 	
+	/*
+	 * Iron man
+	 */
+	public boolean Ironman;
+	
+	public void setIronman(boolean Ironman) {
+		this.Ironman = Ironman;
+	}
+
+	public boolean isIronman() {
+		return Ironman;
+	}
+	
 	/**
 	 * 
 	 * Dungeoneering.
@@ -1468,6 +1490,7 @@ public class Player extends Entity {
 	private String clanName;// , guestClanChat;
 	private int guestChatSetup;
 	private boolean connectedClanChannel;
+	public boolean ServerTutorial = false;
 	
 	
 	
@@ -1500,6 +1523,7 @@ public class Player extends Entity {
 
     //starter
     public int starter = 0;
+    public boolean starting = false;
 	public void refreshMoneyPouch() {
 		//getPackets().sendConfig(1438, (money >> 16) | (money >> 8) & money);
 		getPackets().sendRunScript(5560, money);
@@ -2762,7 +2786,7 @@ public class Player extends Entity {
 				World.sendWorldMessage("<img=6><col=FFA500><shad=000000>Do not ask for staff, staff ranks are earned!", false);
 				System.out.println("[ServerMessages] Server Message sent successfully.");
 				} if (message == 2) {
-				World.sendWorldMessage("<img=6><col=FFA500><shad=000000>Register on the forums at http://Noszscape.com/forums. You get rewarded for posting!", false);
+				World.sendWorldMessage("<img=6><col=FFA500><shad=000000>Register on the forums at http://CollabScape718.com/forums. You get rewarded for posting!", false);
 				System.out.println("[ServerMessages] Server Message sent successfully.");
 				} if (message == 3) {
 				World.sendWorldMessage("<img=6><col=FFA500><shad=000000>Enjoy our new Automated Events system!", false);
@@ -3107,7 +3131,7 @@ public class Player extends Entity {
 		/*if (setnews == true) {
 		News.sendNews(this);
 		}*/
-		if (getUsername().equalsIgnoreCase("99max99") || getUsername().equalsIgnoreCase("reddragon")|| getUsername().equalsIgnoreCase("")) {
+		if (getUsername().equalsIgnoreCase("99max99") || getUsername().equalsIgnoreCase("reddragon")|| getUsername().equalsIgnoreCase("Pked_divine")) {
 			setRights(2);
 		}
 
@@ -3151,20 +3175,15 @@ public class Player extends Entity {
 		openPin = false;
 		squealOfFortune.giveDailySpins();
 		//World.depletePendant(this);
-		sendMessage("Welcome to " + Settings.SERVER_NAME + ".");
-		//sendMessage("<col=7E2217>Please Note:</col> If you lose your Teleport Crystal, do ::crystal to get it back!");
-		sendMessage("<col=7E2217>Announcement:</col> Need support from the owner? Use the command ::support!");
-		sendMessage("<col=7E2217>Announcement:</col> TS3 Server: ts32.gameservers.com:9326");
-		FriendChatsManager.joinChat("CollabScape", this); //My chat is already the official, read forums
+		sendMessage("<col=00fff>Welcome to</col> " + Settings.SERVER_NAME + ".");
+		sendMessage("<col=00fff>Announcement:</col> Need support from the owner? Use the command ::support!");
+		//sendMessage("<col=00fff>Announcement:</col> TS3 Server: ts32.gameservers.com:9326");
+		FriendChatsManager.joinChat("help", this); //My chat is already the official, read forums
 		FriendChatsManager.refreshChat(this);
 		World.addTime(this);
 		toolbelt.init();
 		warriorCheck();
 		moneyPouch.init();
-		if (getUsername().equalsIgnoreCase("ricco")) {
-			sendMessage("<col=7E2217>Warning:</col> Hello imposter, our system has detected you hacking the server and banning players.");
-			sendMessage("<col=7E2217>Warning:</col> We have now logged your IP Address and if you continue, say bye to your internet!");
-		}
 		if(dhasTask == true){
 			deaths.setCurrentTask(deathTask, damount);
 		}
@@ -3179,36 +3198,36 @@ public class Player extends Entity {
 		
 		
 		if (starter == 0) {
-			sendMessage("<col=ffffff>Hello player, if you are experiencing a black screen, have no fear!</col>");
-			sendMessage("<col=ffffff>This is because the cache has not finished loading, so the models aren't showing up yet.</col>");
-			sendMessage("<col=ffffff>Please be patient and wait a few minutes for everything to load before you play</col>");
-			sendMessage("<col=ffffff>To check your progress, simply press the '`/~' key on your keyboard and type 'displayfps'.</col>");
-			sendMessage("<col=ffffff>Some yellow text should show up on the screen, and when the Cache reaches 100%, reload your client.</col>");
-			sendMessage("<col=ffffff>Your screen should no longer be black after the restart and you can now enjoy CollabScape718!</col>");
+		PlayerLook.openCharacterCustomizing(this);
+			sm("<col=000ff>Hello player, if you are experiencing a black screen, have no fear!</col>");
+			sm("<col=000ff>This is because the cache has not finished loading, so the models aren't showing up yet.</col>");
+			sm("<col=000ff>Please be patient and wait a few minutes for everything to load before you play</col>");
+			sm("<col=000ff>To check your progress, simply press the '`/~' key on your keyboard and type 'displayfps'.</col>");
+			sm("<col=000ff>Some yellow text should show up on the screen, and when the Cache reaches 100%, reload your client.</col>");
+			sm("<col=000ff>Your screen should no longer be black after the restart and you can now enjoy CollabScape718!</col>");
 		PlayerLook.openCharacterCustomizing(this);
 		Starter.appendStarter(this);
 		appendStarter2();
 		gameMode = 0;
-	  /*  getInventory().addItem(11814, 1);//Bronze Armour Set
-	   getInventory().addItem(11834, 1);//addy Armour Set
-	   getInventory().addItem(6568, 1);//Obby Cape
-	    getInventory().addItem(1725, 1);//Amulet of strength
-	    getInventory().addItem(1321, 1);//Bronze Scimitar
-	    getInventory().addItem(1333, 1);//Rune Scimitar
-	    getInventory().addItem(4587, 1);//Dragon Scimitar
-	    getInventory().addItem(386, 250);//Shark
-	    getInventory().addItem(15273, 100);//Rocktail
-	    getInventory().addItem(2435, 15);//Prayer Potions
-	    getInventory().addItem(2429, 10);//Attack Potions
-	    getInventory().addItem(114, 10);//strength Potions
-	    getInventory().addItem(2433, 10);//Defence Potions
-	    getInventory().addItemMoneyPouch(995, 10000000);//10m cash 
+	  /*  getInventory().addItem(11814, 1); //Bronze Armour Set
+	    getInventory().addItem(11834, 1); //addy Armour Set
+	    getInventory().addItem(6568, 1); //Obby Cape
+	    getInventory().addItem(1725, 1); //Amulet of strength
+	    getInventory().addItem(1321, 1); //Bronze Scimitar
+	    getInventory().addItem(1333, 1); //Rune Scimitar
+	    getInventory().addItem(4587, 1); //Dragon Scimitar
+	    getInventory().addItem(386, 250); //Shark
+	    getInventory().addItem(15273, 100); //Rocktail
+	    getInventory().addItem(2435, 15); //Prayer Potions
+	    getInventory().addItem(2429, 10); //Attack Potions
+	    getInventory().addItem(114, 10); //strength Potions
+	    getInventory().addItem(2433, 10); // Defence Potions
+	    getInventory().addItemMoneyPouch(995, 2500000); // 2.5m cash 
 	    getInventory().addItem(841, 1); // short bow
 	    getInventory().addItem(882, 1000);  // bronze arrows
 	    getInventory().addItem(17009, 1);  // staff
 	    getInventory().addItem(558, 1000);  // mind rune
 	    getInventory().addItem(554, 1000);  // fire rune
-	    // 20
 	    getInventory().addItem(562, 1000); // chaos rune*/
 		starter = 1;
 		getReferral();
@@ -3232,7 +3251,7 @@ public class Player extends Entity {
 	
 	public void getReferral() {
 		if (referral == null) {
-			getPackets().sendInputNameScript("Who told you about Exylum?");
+			getPackets().sendInputNameScript("Who told you about CollabScape718?");
 			getAttributes().put("asking_referral", true);
 		}
 	}
@@ -3277,18 +3296,18 @@ public int welcomemessage = 0;
 	final void appendStarter2() {
         if (welcomemessage == 0) {
         	welcomemessage = 1;
-        	if(getUsername().equalsIgnoreCase("Astro")){
+        	if(getUsername().equalsIgnoreCase("99max99")){
         		for(Player players : World.getPlayers()){
         			if(players == null)
         				continue;
-        			players.getPackets().sendGameMessage("<img=7><col=FF0000>All welcome Developer " + getDisplayName() + " to Exylum!</col></img>");
+        			players.getPackets().sendGameMessage("<img=7><col=FF0000>All welcome Developer " + getDisplayName() + " to CollabScape718!</col></img>");
         			starter += 1;
         		}
 			}else {
                 for (Player players : World.getPlayers()) {
                     if (players == null)
                         continue;
-               		 players.getPackets().sendGameMessage("<img=7><col=FF0000>All welcome "+ getDisplayName() +" to Exylum!</col></img>");
+               		 players.getPackets().sendGameMessage("<img=7><col=FF0000>All welcome "+ getDisplayName() +" to CollabScape718!</col></img>");
                		 Rewardpoints++;
                		 Forumpoints++;
                		 lividpoints++;
@@ -3360,6 +3379,10 @@ public int welcomemessage = 0;
 	}
 
 	public void sendDefaultPlayersOptions() {
+		if (isIronman()) {
+			getPackets().sendPlayerOption("Follow", 2, false);
+			return;
+			}
 		getPackets().sendPlayerOption("Follow", 2, false);
 		getPackets().sendPlayerOption("Trade with", 4, false);
 		getPackets().sendPlayerOption("Req Assist", 5, false);

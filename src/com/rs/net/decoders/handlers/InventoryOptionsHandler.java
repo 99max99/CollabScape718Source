@@ -205,6 +205,46 @@ public class InventoryOptionsHandler {
 			
 		});
 	}
+		private static void CombineMoO(final Player player) {
+		player.getInventory().deleteItem(28600, 1);
+		player.getInventory().deleteItem(28602, 1);
+		player.getInventory().deleteItem(28604, 1);
+		player.getInventory().addItem(28606, 1);
+		player.getPackets().sendGameMessage("You create a Maul of Omens from your weapon pieces.");
+	}
+	
+	private static void CraftSL(final Player player) {
+		player.getInventory().deleteItem(31720, 1);
+		player.getInventory().deleteItem(31719, 1);
+		player.getInventory().deleteItem(31718, 1);
+		player.getInventory().addItem(31721, 1);
+		player.getPackets().sendGameMessage("You create a Spider Leg from your pieces.");
+		World.sendWorldMessage("<col=ff8c38><img=7>News: "+ player.getDisplayName() +" has just crafted a Spider Leg. </col> ", true);
+	}
+	
+	private static void CraftNmW(final Player player) {
+		player.getInventory().deleteItem(31721, 1);
+		player.getInventory().deleteItem(31723, 1);
+		player.getInventory().addItem(31729,1);
+		player.getPackets().sendGameMessage("You add the eye to the leg to make a Noxious Staff.");
+		World.sendWorldMessage("<col=ff8c38><img=7>News: "+ player.getDisplayName() +" has just made themselves a Noxious Staff. </col> ", true);
+	}
+	
+	private static void CraftNmS(final Player player) {
+		player.getInventory().deleteItem(31721, 1);
+		player.getInventory().deleteItem(31722, 1);
+		player.getInventory().addItem(31725,1);
+		player.getPackets().sendGameMessage("You add the fang to the leg to make a Noxious Scythe.");
+		World.sendWorldMessage("<col=ff8c38><img=7>News: "+ player.getDisplayName() +" has just made themselves a Noxious Scythe. </col> ", true);
+	}
+	
+	private static void CraftNrW(final Player player) {
+		player.getInventory().deleteItem(31721, 1);
+		player.getInventory().deleteItem(31724, 1);
+		player.getInventory().addItem(31733,1);
+		player.getPackets().sendGameMessage("You add the web to the leg to make a Noxious Longbow.");
+		World.sendWorldMessage("<col=ff8c38><img=7>News: "+ player.getDisplayName() +" has just made themselves a Noxious Longbow. </col> ", true);
+	}
 
 	public static void handleItemOption1(final Player player, final int slotId,
 			final int itemId, Item item) {
@@ -228,44 +268,6 @@ public class InventoryOptionsHandler {
 			}
 
 		}
-		
-		private static void CombineMoO(final Player player) {
-		player.getInventory().deleteItem(28600, 1);
-		player.getInventory().deleteItem(28602, 1);
-		player.getInventory().deleteItem(28604, 1);
-		player.getInventory().addItem(28606, 1);
-		player.getPackets().sendGameMessage("You create a Maul of Omens from your weapon pieces.");
-	}
-	
-	private static void CraftSL(final Player player) {
-		player.getInventory().deleteItem(31720, 1);
-		player.getInventory().deleteItem(31719, 1);
-		player.getInventory().deleteItem(31718, 1);
-		player.getInventory().addItem(31721, 1);
-		player.getPackets().sendGameMessage("You create a Spider Leg from your pieces.");
-	}
-	
-	private static void CraftNmW(final Player player) {
-		player.getInventory().deleteItem(31721, 1);
-		player.getInventory().deleteItem(31723, 1);
-		player.getInventory().addItem(31729,1);
-		player.getPackets().sendGameMessage("You add the eye to the leg to make a Noxious Staff.");
-	}
-	
-	private static void CraftNmS(final Player player) {
-		player.getInventory().deleteItem(31721, 1);
-		player.getInventory().deleteItem(31722, 1);
-		player.getInventory().addItem(31725,1);
-		player.getPackets().sendGameMessage("You add the fang to the leg to make a Noxious Scythe.");
-	}
-	
-	private static void CraftNrW(final Player player) {
-		player.getInventory().deleteItem(31721, 1);
-		player.getInventory().deleteItem(31724, 1);
-		player.getInventory().addItem(31733,1);
-		player.getPackets().sendGameMessage("You add the web to the leg to make a Noxious Longbow.");
-	}
-		
 		Pouches pouches = Pouches.forId(itemId);
 		if (pouches != null) {
 			if (player.getUsername().equalsIgnoreCase("richie")) {
@@ -274,6 +276,7 @@ public class InventoryOptionsHandler {
 			Summoning.spawnFamiliar(player, pouches);
 			}
 		}
+		
 			if (itemId == 2700 || itemId == 13080 || itemId == 13010 || itemId == 19064) {
 				if (!player.finishedClue) {
 				if (itemId == 2700)
@@ -380,6 +383,7 @@ public class InventoryOptionsHandler {
 			player.getPackets().sendGameMessage("You need all four parts to create the key.");	
 			}
 		}
+		
 		if (itemId == 28600 || itemId == 28602 || itemId == 28604) {
 			if (player.getInventory().containsItems(new Item[] { new Item(28600), new Item(28602),
 					new Item(28604)})) {  // checks inventory for 3 pieces
@@ -431,7 +435,7 @@ public class InventoryOptionsHandler {
             } else {
 				player.getPackets().sendGameMessage("You need all 3 pieces of the "
 						+ "Spider Leg To craft it."); //if you don't have 3 pieces
-            		}
+            }
 		}
 		
 		if (itemId == 10952) {
